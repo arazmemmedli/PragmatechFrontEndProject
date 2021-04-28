@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <section class="header-top">
+                <div class="header-top-row">
+                    <div class="header-top-left">
+                        <span>Free Shipping on Orders $99</span>
+                    </div>
+                    <div class="header-top-right">
+                        <ul class="header-top-menu">
+                            <li>
+                                <div class="store-location">
+                                    <a href="">
+                                        Store Location
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order">
+                                    <a href="#">
+                                        Track Your Oder
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="language">
+                                    <span class="language-options">
+                                        Eng
+                                        <i class="bi bi-chevron-down"></i>
+                                    </span>
+                                    <ul class="cafe-langs">
+                                        <li style="border-right: none;">Please activate Polylang or WPML plugin to show available languages.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="site-currency">
+                                    <span>
+                                        EUR
+                                        <i class="bi bi-chevron-down"></i>
+                                    </span>
+                                    <ul class="currency-options">
+                                        <li style="border-right: none;">
+                                            <a href="#">USD</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="site-login">
+                                    <span><i class="bi bi-person-circle"></i></span>
+                                    <span>Login</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="header">
+                <div class="wrap-site-header">
+                    <div class="header">
+                        <div class="wrap-site-logo">
+                            <a href="" class="site-logo">
+                                <img src="images/cerato-logo (1).svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrap-site-search-container">
+                        <div class="wrap-site-search">
+                            <div class="wrap-site-search-form">
+                                <input type="search" class="search-field" placeholder="Search for product...">
+                                <input type="submit" class="search-btn" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column-wrap">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-icons">
+                                <div class="refresh-icon">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <div class="elementor-icons elementor-heart">
+                                <div class="heart-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <div class="elementor-icons">
+                                <div class="cart-icon">
+                                    <i class="bi bi-bag"></i>
+                                    <span class="cart-count">0</span>
+                                    <span class="cart-desc">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="site-header-menu">
+                <div class="header-menu">
+                    <div class="sidebar-menu">
+                        <div class="category-menu">
+                            <span class="category-bars">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                            <span class="category-name">Category</span>
+                            <span class="category-icon-down">
+                                <i class="bi bi-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="wrap-category-inner">
+                            <ul class="category-inner">
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </span>
+                                    <span>Jewerly</span>
+                                    <span class="menu-item-badge">HOT</span>
+                                    <span class="item-icon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <span>Cosmetic</span>
+                                    <span class="item-icon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="far fa-futbol"></i>
+                                    </span>
+                                    <span>Toy & Kids</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="far fa-lightbulb"></i>
+                                    </span>
+                                    <span>Electronics</span>
+                                    <span class="menu-item-badge">NEW</span>
+                                    <span class="item-icon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-adjust"></i>
+                                    </span>
+                                    <span>Accessories</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </span>
+                                    <span>Sporting</span>
+                                    <span class="menu-item-badge">ON SALE</span>
+                                    <span class="item-icon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-microphone"></i>
+                                    </span>
+                                    <span>Musics</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-transgender-alt"></i>
+                                    </span>
+                                    <span>Travel Gears</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </span>
+                                    <span>Pets</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="far fa-image"></i>
+                                    </span>
+                                    <span>Pictures</span>
+                                </li>
+                                <li>
+                                    <span class="menu-item-icon">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </span>
+                                    <span>Foodies</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="header-menu-list">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Shop</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                Page
+                                <span class="header-menu-list-icon">
+                                    <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </li>
+                            <ul class="header-menu-page-hover">
+                                <li>Contact 2</li>
+                                <li>About 2</li>
+                            </ul>
+                        </a>
+                    </ul>
+                    <div class="header-menu-theme">
+                        <span>
+                            <a href="#">
+                                Purchase Theme
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-slider">
+        <div class="slider">
+            <div class="slide s_active" style="background-image: url(images/slider-home-2-1.jpg);">
+                <div class="slider-container">
+                    <div class="caption">
+                       <h3 class="slider-headline">
+                           <span class="slider-headline-text-before">Summer</span>
+                           <span class="slider-words-wrapper">
+                               <b>Season</b>
+                               <b>Fashion</b>
+                           </span>
+                       </h3>
+                       <h2 class="heading-title">New Shoes</h2>
+                       <div class="slider-desc">
+                           <p>
+                            Cerato is a clean, modern, user friendly, responsive <br> and highly customizable WordPress Theme.
+                           </p>
+                       </div>
+                       <a href="" class="slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url(images/slide-03.jpg);">
+                <div class="slider-container">
+                    <div class="caption">
+                       <h3 class="slider-headline">
+                           <span class="slider-headline-text-before">Summer Seasion</span>
+                       </h3>
+                       <h3 class="slider-headline">
+                        <span class="slider2-headline-text-before">New</span>
+                        <span class="slider2-words-wrapper">
+                            <b>Shoes</b>
+                            <b>Jewerly</b>
+                            <b>Cosmetic</b>
+                        </span>
+                    </h3>
+                       <div class="slider-desc">
+                           <p>
+                            Cerato is a clean, modern, user friendly, responsive <br> and highly customizable WordPress Theme.
+                           </p>
+                       </div>
+                       <a href="" class="slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <div class="prevBtn">
+                <i class="bi bi-chevron-left"></i>
+            </div>
+            <div class="nextBtn">
+                <i class="bi bi-chevron-right"></i>
+            </div>
+        </div>
+        <!-- Indicators -->
+        <div class="indicator">
+        </div>
+    </div>
+    <section id="daily">
+        <div class="daily-boxed">
+            <div class="boxed-header">
+                <div class="boxed-nav">
+                    <h3 class="h-boxed">Daily Deals</h3>
+                    <div class="site-countdown-block">
+                        <i class="bi bi-clock"></i>
+                        <div class="countdown-block">
+                            <div class="countdown-times">
+                                <div id="day"></div>
+                                <div id="hour"></div>
+                                <div id="minute"></div>
+                                <div id="second"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content-slider">
+                            <div class="slide-container">
+                                <div class="slide-item">
+                                    <div class="product-img">
+                                        <span class="onsale">Safe!</span>
+                                        <a href="" class="wrap-img">
+                                            <img src="images/jewelry-6-300x374 (1).jpg" alt="">
+                                        </a>
+                                        <a href="#" class="btn-quick-view">
+                                            <i class="far fa-eye"></i>
+                                            Quick view
+                                        </a>
+                                        <div class="product-loop-buttons">
+                                            <a href="">
+                                                <i class="bi bi-bag-plus-fill"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fas fa-retweet"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <h3 class="product-loop-title">
+                                            <a href="#">Stud Earrings</a>
+                                        </h3>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="price">
+                                            <del>
+                                                <span class="old-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    35.00
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span class="new-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    32.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="product-img">
+                                        <span class="onsale">Safe!</span>
+                                        <a href="" class="wrap-img">
+                                            <img src="images/jewelry-6-300x374 (1).jpg" alt="">
+                                        </a>
+                                        <a href="#" class="btn-quick-view">
+                                            <i class="far fa-eye"></i>
+                                            Quick view
+                                        </a>
+                                        <div class="product-loop-buttons">
+                                            <a href="">
+                                                <i class="bi bi-bag-plus-fill"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fas fa-retweet"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <h3 class="product-loop-title">
+                                            <a href="#">Stud Earrings</a>
+                                        </h3>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="price">
+                                            <del>
+                                                <span class="old-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    35.00
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span class="new-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    32.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="product-img">
+                                        <span class="onsale">Safe!</span>
+                                        <a href="" class="wrap-img">
+                                            <img src="images/jewelry-6-300x374 (1).jpg" alt="">
+                                        </a>
+                                        <a href="#" class="btn-quick-view">
+                                            <i class="far fa-eye"></i>
+                                            Quick view
+                                        </a>
+                                        <div class="product-loop-buttons">
+                                            <a href="">
+                                                <i class="bi bi-bag-plus-fill"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fas fa-retweet"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <h3 class="product-loop-title">
+                                            <a href="#">Stud Earrings</a>
+                                        </h3>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="price">
+                                            <del>
+                                                <span class="old-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    35.00
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span class="new-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    32.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="product-img">
+                                        <span class="onsale">Safe!</span>
+                                        <a href="" class="wrap-img">
+                                            <img src="images/jewelry-6-300x374 (1).jpg" alt="">
+                                        </a>
+                                        <a href="#" class="btn-quick-view">
+                                            <i class="far fa-eye"></i>
+                                            Quick view
+                                        </a>
+                                        <div class="product-loop-buttons">
+                                            <a href="">
+                                                <i class="bi bi-bag-plus-fill"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fas fa-retweet"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <h3 class="product-loop-title">
+                                            <a href="#">Stud Earrings</a>
+                                        </h3>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="price">
+                                            <del>
+                                                <span class="old-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    35.00
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span class="new-price">
+                                                    <span class="price-currency-symbol">$</span>
+                                                    32.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
