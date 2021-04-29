@@ -86,7 +86,7 @@ function autoPlay(){
     updateCircleIndicator();
 }
 
-let timer=setInterval(autoPlay,4000)
+let timer=setInterval(autoPlay,6000)
 
 var countDate = new Date('Apr 28, 2021 00:00:00').getTime();
 
@@ -105,3 +105,36 @@ var x = setInterval(function(){
     document.getElementById('second').innerHTML = seconds;
 }); 
 
+
+let pos=0;
+
+function slideShow(class1,class2,class3,px,btn,figur){
+    let itemCount=figur;
+    let containerWidth=document.querySelector('.'+class1).clientWidth;
+    let items=document.querySelectorAll('.'+class2)
+
+    for(let i=0;i<items.length;i++){
+        items[i].style.width=containerWidth/itemCount +'px'
+    }
+
+    let sliderContainer=document.querySelector('.'+class3)
+    sliderContainer.style.width=containerWidth/itemCount*items.length +'px';
+
+    if(btn == 'prev'){
+        if(pos>0){
+            pos=-px
+            sliderContainer.style.left=pos+'px';
+        }else{
+            sliderContainer.style.left=pos+'px';
+            pos+=containerWidth/itemCount
+        }
+    }else{
+        if(pos>-px){
+            pos-=containerWidth/itemCount
+            sliderContainer.style.left=pos+'px';
+        }else{
+            pos=0
+            sliderContainer.style.left=pos+'px';
+        }
+    }
+}
