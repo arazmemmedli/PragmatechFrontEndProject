@@ -2211,4 +2211,147 @@ body{
 .header-top-right .about-site-login:hover .about-site-login-text{
     color: #fc6702 !important;
 }
-
+#contact-us{
+    margin-bottom: 80px;
+}
+#contact-us .contact-us-start .contact-us-container{
+    max-width: 1410px;
+    position: relative;
+    margin: auto;
+    height: 177px;
+}
+#contact-us .contact-us-start .contact-us-container .contact-us-header{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 50px;
+}
+#contact-us .contact-us-start .contact-us-container .contact-us-header .contact-us-title h2{
+    font-size: 36px;
+    color: #252525;
+    font-weight: 600;
+}
+#contact-us .contact-us-start .contact-us-container .contact-us-header .contact-us-word p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+#contact-us .contact-us-content .container{
+    max-width: 1410px;
+    margin: auto;
+}
+#contact-us .contact-us-content .container .contact-us-item .contact-us-icon{
+    font-size: 55px;
+    text-align: center;
+    color: #fc6702;
+}
+#contact-us .contact-us-content .container .contact-us-item .contact-us-icon-title h2{
+    text-align: center;
+    font-size: 24px;
+    color: #252525;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#contact-us .contact-us-content .container .contact-us-item .contact-us-icon-text p{
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7em;
+}
+#contact{
+    background-color: #f5f5f5;
+}
+#contact .contact-start .contact-container{
+    max-width: 1410px;
+    margin: auto;
+}
+#contact .contact-start .contact-container .contact-header{
+    text-align: center;
+    padding: 90px 0px 0px 0px;
+}
+#contact .contact-start .contact-container .contact-header .contact-title h2{
+    color: #252525;
+    font-size: 36px;
+    font-weight: 600;
+}
+#contact .contact-start .contact-container .contact-header .contact-header-word p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+#contact .contact-start .contact-form-container{
+    max-width: 950px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#contact .contact-start .contact-form-container .form-group label{
+    color: #666;
+}
+#contact .contact-start .contact-form-container .form-group input{
+    display: block;
+}
+#contact .contact-start .contact-form-container .form-group .form-control{
+    width: 100%;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    height: 40px;
+}
+#contact .contact-start .contact-form-container .form-group .form-message{
+    height: 158px;
+}
+#contact .contact-start .contact-form-container .form-group{
+    margin-bottom: 40px;
+}
+#contact .contact-start .contact-form-container .form-group .form-group-btn{
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    background-color: #fc6702;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 12px;
+    font-weight: 500;
+}
+#contact-icons{
+    height: 141px;
+}
+#contact-icons .elementor-widget-container{
+    max-width: 1410px;
+    margin: auto;
+}
+#contact-icons .elementor-widget-container .elementor-container .elementor-icon-box-wrapper{
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+#contact-icons .elementor-widget-container .elementor-container .elementor-icon-box-wrapper .elementor-box-icon .elementor-icon{
+    display: inline-block;
+    font-size: 25px;
+    color: #959595;
+}
+#contact-icons .elementor-widget-container .elementor-container{
+    display: flex;
+    justify-content: space-around;
+}
+#contact-icons .elementor-widget-container .elementor-container .elementor-icon-box-wrapper .elementor-icon-box-content{
+    margin-left: 10px;
+}
+#contact-icons .elementor-widget-container .elementor-container .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-title{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#contact-icons .elementor-widget-container .elementor-container .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.4em;
+    letter-spacing: 0.4px;
+}
