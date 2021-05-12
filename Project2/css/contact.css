@@ -60,29 +60,29 @@
 .header__nav__pages__list{
     list-style: none;
     display: flex;
+    align-items: center;
 }
 .header__nav__pages__list__item{
-    padding: 0 25px;
     position: relative;
-    width: 90px;
-    cursor: pointer;
+    display: inline-block;
 }
 .header__nav__pages__list__item__title{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    padding: 1em 1.3em;
+    transition: all .3s ease;
 }
 .header__nav__pages__title__icon{
-    position: absolute;
     font-size: 12px;
-    margin-top: 2px;
-    margin-left: 5px;
+    margin-top: 10px;
 }
 .products__menu{
     list-style: none;
-    position: relative;
+    position: absolute;
     min-width: 260px;
     z-index: 99999;
+    top: 100%;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -103,6 +103,9 @@
 .header__nav__pages__list__item:hover .products__menu{
     opacity: 1;
     visibility: visible;
+}
+.header__nav__pages__list__item:hover .header__nav__pages__list__item__title{
+    color: #a8b324;
 }
 .header__nav__actions{
     display: flex;

@@ -60,29 +60,29 @@
 .header__nav__pages__list{
     list-style: none;
     display: flex;
+    align-items: center;
 }
 .header__nav__pages__list__item{
-    padding: 0 25px;
     position: relative;
-    width: 90px;
-    cursor: pointer;
+    display: inline-block;
 }
 .header__nav__pages__list__item__title{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    padding: 1em 1.3em;
+    transition: all .3s ease;
 }
 .header__nav__pages__title__icon{
-    position: absolute;
     font-size: 12px;
-    margin-top: 2px;
-    margin-left: 5px;
+    margin-top: 10px;
 }
 .products__menu{
     list-style: none;
-    position: relative;
+    position: absolute;
     min-width: 260px;
     z-index: 99999;
+    top: 100%;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -103,6 +103,9 @@
 .header__nav__pages__list__item:hover .products__menu{
     opacity: 1;
     visibility: visible;
+}
+.header__nav__pages__list__item:hover .header__nav__pages__list__item__title{
+    color: #a8b324;
 }
 .header__nav__actions{
     display: flex;
@@ -160,6 +163,151 @@
     font-weight: 700;
     color: #000;
 }
+.account__dropdown{
+    text-align: left;
+    right: 0;
+    top: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    visibility: hidden;
+    margin-top: 20px;
+}
+.account__dropdown::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    right: -10px;
+    height: 25px;
+}
+.account__dropdown::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #a8b324;
+}
+.account__wrap{
+    display: block!important;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 5%);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ebebeb;
+}
+.account__inner{
+    width: 320px;
+    padding: 20px;
+    max-height: 500px;
+    overflow: auto;
+}
+.account__form__title{
+    font-size: 18px;
+    color: #333;
+}
+.register__link{
+    color: #a8b324;
+    font-size: 14px;
+    text-decoration: none;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    margin-bottom: .5rem;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.required{
+    border-bottom: 0!important;
+    color: #e2401c;
+}
+.form__control{
+    width: 100%;
+    color: #555;
+    border-style: solid;
+    border-color: #ebebeb;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: 0;
+    line-height: normal!important;
+    border-width: 1px;
+    padding: 15px;
+}
+.form__group__button{
+    font-size: 12px!important;
+    text-transform: uppercase;
+    line-height: normal!important;
+    border-width: 1px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background: 0 0;
+    background-color: #a8b324;
+    border-color: #a8b324;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    font-weight: 700;
+}
+.login__form__link{
+    text-decoration: none;
+    color: #a8b324;
+    font-size: 14px;
+}
+.header__up__login__actions{
+    position: relative;
+    transition: all .3s ease;
+}
+.header__up__login__actions:hover .account__dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.cart__content{
+    min-width: 320px;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: #ebebeb;
+    border-top-color: #a8b324;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 2.2906835em 1.41575em 1.41575em;
+    right: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cart__content::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+.shopping__cart__content__message{
+    margin: 1.41575em;
+    color: #555;
+}
+.header__up__actions__context:hover .cart__content{
+    opacity: 1;
+    visibility: visible;
+} 
 .header-nav-email-input{
     display: flex;
     align-items: center;

@@ -31,10 +31,15 @@ body{
 .header__top__links__list__item{
     color: #fff;
     padding: 0 20px;
+    cursor: pointer;
 }
 .header__top__links__list__item__buttons{
     text-decoration: none;
     color: #fff;
+    transition: all .3s ease;
+}
+.header__top__links__list__item:hover .header__top__links__list__item__buttons{
+    color: #a8b324;
 }
 .header__nav{
     width: 100%;
@@ -59,18 +64,26 @@ body{
 .header__nav__pages{
     display: flex;
     align-items: center;
+    position: relative;
 }
 .header__nav__pages__list{
     list-style: none;
     display: flex;
+    transition: none;
+    max-height: none;
+    overflow: visible;
 }
 .header__nav__pages__list__item{
-    padding: 0 25px;
+    position: relative;
+    display: inline-block;
 }
 .header__nav__pages__list__item__title{
     text-decoration: none;
     color: #000000;
+    display: block;
     font-weight: 600;
+    padding: 1em 1.3em;
+    transition: all .3s ease;
 }
 .header__nav__pages__title__icon{
     font-size: 12px;
@@ -81,7 +94,8 @@ body{
     position: absolute;
     min-width: 260px;
     z-index: 99999;
-    top: 16%;
+    top: 100%;
+    left: 20px;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -91,6 +105,7 @@ body{
 .products__menu__item{
     padding: 8px 20px;
     display: block;
+    position: relative;
 }
 .products__menu__item__link{
     text-decoration: none;
@@ -99,6 +114,9 @@ body{
 .header__nav__pages__list__item:hover .products__menu{
     opacity: 1;
     visibility: visible;
+}
+.header__nav__pages__list__item:hover .header__nav__pages__list__item__title{
+    color: #a8b324;
 }
 .header__nav__actions{
     display: flex;
@@ -270,6 +288,38 @@ body{
     opacity: 1;
     visibility: visible;
 }
+.cart__content{
+    min-width: 320px;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: #ebebeb;
+    border-top-color: #a8b324;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 2.2906835em 1.41575em 1.41575em;
+    right: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cart__content::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+.shopping__cart__content__message{
+    margin: 1.41575em;
+    color: #555;
+}
+.header__up__actions__context:hover .cart__content{
+    opacity: 1;
+    visibility: visible;
+} 
 #content{
     margin-bottom: 90px;
 }
@@ -341,10 +391,10 @@ body{
     font-size: 15px;
     padding: 12px 24px;
     -webkit-border-radius: 3px;
-    /* border-radius: 3px; */
     font-size: 12px;
     background-color: #0a472e;
     border-radius: 22px 22px 22px 22px;
+    cursor: pointer;
     color: #fff;
     fill: #fff;
     text-align: center;
@@ -352,15 +402,26 @@ body{
     -o-transition: all .3s;
     transition: all .3s;
 }
+.bg__content__box__button:hover{
+    background-color: #fff;
+}
+.bg__content__box__button:hover a{
+    color: #0a472e;
+}
+.bg__content__box__button:hover .bg__content__box__button__icon{
+    color: #0a472e;
+}
 .bg__content__box__button a{
     text-decoration: none;
     color: #fff;
+    transition: all .3s ease;
 }
 .bg__content__box__button__icon{
     display: inline-block;
     position: relative;
     left: 3px;
     top: 1.5px;
+    transition: all .3s ease;
 }
 .content__item__one__box{
     padding: 55px 65px 70px;
@@ -776,6 +837,9 @@ body{
 .shop__action{
     display: flex;
 }
+.shop__action__btn{
+    cursor: pointer;
+}
 .shop__action__btn .fa-heart{
     color: #000;
     font-size: 14px;
@@ -788,6 +852,19 @@ body{
     color: #000;
     font-size: 14px;
 }
+.shop__action__btn:hover{
+    background-color: #a8b324;
+    border-color: #a8b324;
+}
+.shop__action__btn:hover .fa-heart{
+    color: #fff;
+}
+.shop__action__btn:hover .bi-shuffle{
+    color: #fff;
+}
+.shop__action__btn:hover .fa-eye{
+    color: #fff;
+} 
 .products__item:hover .products__item__images__actions{
     bottom: 55px;
     opacity: 1;
@@ -848,11 +925,15 @@ body{
     margin-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-
+    cursor: pointer;
 }
 .h__products__item__title a{
     text-decoration: none;
     color: #000;
+    transition: all .3s ease;
+}
+.h__products__item__title:hover a{
+    color: #a8b324;
 }
 .price{
     display: block;
