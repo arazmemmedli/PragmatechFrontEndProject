@@ -1067,6 +1067,7 @@ body{
 .special__products__container{
     margin-bottom: 90px;
     padding: 90px 30px;
+    position: relative;
     background-image: url(https://demo2wpopal.b-cdn.net/freshio/wp-content/uploads/2020/08/h5_bg.jpg);
     background-position: center center;
 }
@@ -1081,6 +1082,7 @@ body{
 .h__special__products__header__bottom{
     font-size: 40px;
     letter-spacing: -1px;
+    color: #0a472e;
 }
 .special__container{
     max-width: 880px;
@@ -1254,18 +1256,41 @@ body{
 .controls .prevBtn{
     position: absolute;
     z-index: 1;
-    left: 0;
     top: 50%;
-    font-size: 28px;
+    font-size: 16px;
     cursor: pointer;
+    width: 50px;
+    background: #fff;
+    border-radius: 50%;
+    height: 50px;
+    text-align: center;
+    transition: all .3s ease;
 }
 .controls .nextBtn{
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: 40px;
     top: 50%;
-    font-size: 28px;
+    font-size: 16px;
     cursor: pointer;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+.controls .prevBtn .fa-long-arrow-alt-left{
+    margin-top: 16px;
+}
+.controls .nextBtn .fa-long-arrow-alt-right{
+    margin-top: 16px;
+}
+.controls .prevBtn:hover{
+    background-color: #a8b324;
+}
+.controls .nextBtn:hover{
+    background-color: #a8b324;
 }
 #top__category .top__category__container .container{
     padding-bottom: 80px;
