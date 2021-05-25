@@ -1,0 +1,133 @@
+/* font-family: 'Mulish', sans-serif; */
+:root {
+    --dark-gray: #1f1534;
+    --gray: #7d7987;
+    --black: #000000;
+    --white: #fff;
+    --blue: #458ff6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.wrapper{
+    position: relative;
+    width: 1600px;
+    height: 5870px;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+/* Header Start */
+
+.header{
+    width: 1487px;
+    margin-top: 56px;
+    align-items: center;
+    margin-right: 163px;
+}
+
+.nav{
+    margin-left: 512px;
+}
+
+.logo{
+    width: 160px;
+    height: 41px;
+    margin-left: 191px;
+}
+
+.nav__items__list{
+    margin-right: 40px;
+}
+
+.nav__items__list a{
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--dark-gray);
+    opacity: 0.5;
+}
+.nav__items .nav__items__list a.active{
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Header End */
+
+.element {
+    position: absolute;
+    width: 131.58px;
+    height: 115px;
+    top: 160px;
+    left: 0;
+}
+
+/* Hero container Start*/
+
+.hero__container{
+    margin-top: 80px;
+    margin-left: 190px;
+}
+
+.left {
+    height: 338px;
+    margin-right: 109px;
+}
+
+.left__title{
+    margin-top: 110px;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 25px;
+    mix-blend-mode: normal;
+}
+
+.left__desc {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 45px;
+    mix-blend-mode: normal;
+}
+
+.left .btn{
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.right{
+    width: 693px;
+    height: 598px;
+    margin-right: 163px;
+}
+
+/* Hero cntainer end */
+
+.btn__primary {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.d__flex{
+    display: flex;
+}
