@@ -105,7 +105,7 @@ ul{
     mix-blend-mode: normal;
 }
 
-.left .btn{
+/* .left .btn{
     width: 200px;
     height: 56px;
     border-radius: 55px;
@@ -113,7 +113,7 @@ ul{
     font-weight: bold;
     font-size: 18px;
     line-height: 60px;
-}
+} */
 
 .right{
     width: 693px;
@@ -467,7 +467,7 @@ ul{
     mix-blend-mode: normal;
     margin-bottom: 37px;
 }
-.hero__container__leading__btn {
+/* .hero__container__leading__btn {
     width: 200px;
     height: 60px;
     border: 1.4px solid #458FF6;
@@ -479,7 +479,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 /* Hero container leading end */
 /* Hero container mobile start */
 .hero__container__mobile {
@@ -530,7 +530,7 @@ ul{
     margin-bottom: 40px;
 }
 
-.hero__container__mobile__button {
+/* .hero__container__mobile__button {
     width: 200px;
     height: 60px;
     border: 1.4px solid #458FF6;
@@ -542,7 +542,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .hero__container__mobile__button__icon {
     margin-left: 14.79px;
@@ -561,7 +561,7 @@ ul{
     width: 1120px;
     height: 425px;
     position: relative;
-    /* margin: 15px 47.58px 62px 52px; */
+    margin: 15px 47.58px 62px 52px;
     background: linear-gradient(
 208.18deg
 , #67C3F3 9.05%, #5A98F2 76.74%);
@@ -805,7 +805,7 @@ ul{
     margin-left: 509px;
 }
 
-.checkout__btn {
+/* .checkout__btn {
     width: 200px;
     height: 60px;
     border: 1.4px solid #458FF6;
@@ -817,7 +817,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* End Checkout */
 /* Start Footer */
@@ -974,9 +974,26 @@ ul{
 
 /* End Footer */
 
+.btn {
+    width: 200px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn__primary {
     color: var(--white);
     background-color: var(--blue);
+}
+
+.btn__light {
+    color: var(--blue);
+    border: 1.4px solid #458FF6;
 }
 
 .d__flex{
