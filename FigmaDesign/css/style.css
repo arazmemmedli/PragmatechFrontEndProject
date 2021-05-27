@@ -67,7 +67,7 @@ ul{
 /* Header End */
 
 .element {
-    position: absolute;
+    /* position: absolute; */
     width: 131.58px;
     height: 115px;
     top: 160px;
@@ -81,12 +81,12 @@ ul{
     margin-left: 190px;
 }
 
-.left {
+.hero__container__left {
     height: 338px;
     margin-right: 109px;
 }
 
-.left__title{
+.hero__container__left__title{
     margin-top: 110px;
     font-size: 48px;
     line-height: 56px;
@@ -96,7 +96,7 @@ ul{
     mix-blend-mode: normal;
 }
 
-.left__desc {
+.hero__container__left__desc {
     font-size: 21px;
     line-height: 32px;
     font-weight: 300;
@@ -115,7 +115,7 @@ ul{
     line-height: 60px;
 } */
 
-.right{
+.hero__container__right{
     width: 693px;
     height: 598px;
     margin-right: 163px;
@@ -175,20 +175,20 @@ ul{
     mix-blend-mode: normal;
 }
 .services__vector{
-    position: absolute;
+    /* position: absolute; */
     width: 937.95px;
     height: 671.35px;
 }
 .services__vector .services__vector__img{
     width: 937.95px;
     height: 671.35px;
-    position: absolute;
+    /* position: absolute; */
     right: 20.31%;
     top: -18.47%;
 }
 .services__container{
     width: 1120px;
-    position: absolute;
+    position: relative;
     margin-top: 80px;
     margin-left: 240px;
     margin-right: 240px;
@@ -305,7 +305,7 @@ ul{
 
 .services__container__bottom{
     width: 1120px;
-    position: absolute;
+    /* position: absolute; */
     top: 650px;
     margin-left: 240px;
     margin-right: 240px;
@@ -407,7 +407,7 @@ ul{
 .services__button a{
     width: 200px;
     height: 56px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     border: 1.4px solid #458FF6;
     box-sizing: border-box;
@@ -571,7 +571,7 @@ ul{
 .testimonials__element {
     width: 131.58px;
     height: 115px;
-    position: absolute;
+    /* position: absolute; */
     right: -50px;
     top: -20px;
     opacity: 26%;
@@ -627,7 +627,7 @@ ul{
     line-height: 48px;
     color: var(--white);
     mix-blend-mode: normal;
-    position: absolute;
+    /* position: absolute; */
     top: 236px;
 }
 
@@ -638,7 +638,7 @@ ul{
     color: rgba(255, 255, 255, 0.85);
     mix-blend-mode: normal;
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     top: 268px;
 }
 
@@ -714,17 +714,13 @@ ul{
 }
 
 .checkout__vector {
-    position: absolute;
+    /* position: absolute; */
     right: -80px;
 }
 
 .checkout__vector img {
     width: 778.72px;
     height: 557.38px;
-}
-
-.checkout__element {
-    position: absolute;
 }
 
 .checkout__element img {
@@ -829,7 +825,7 @@ ul{
 }
 
 .footer__element{
-    position: absolute;
+    /* position: absolute; */
     right: 5.71%;
     margin-right: 91.42px;
 }
@@ -843,7 +839,7 @@ ul{
 }
 
 .footer__element__two {
-    position: absolute;
+    /* position: absolute; */
     bottom: -19px;
     left: -19px;
 }
@@ -986,16 +982,20 @@ ul{
     align-items: center;
 }
 
-.btn__primary {
+.btn--primary {
     color: var(--white);
     background-color: var(--blue);
 }
 
-.btn__light {
+.btn--light {
     color: var(--blue);
     border: 1.4px solid #458FF6;
 }
 
 .d__flex{
     display: flex;
+}
+
+.p--absolute {
+    position: absolute;
 }
