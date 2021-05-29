@@ -5,6 +5,7 @@
     --black: #000000;
     --white: #fff;
     --blue: #458ff6;
+    --base-font-size: 18px;
 }
 
 * {
@@ -24,7 +25,7 @@ ul{
     list-style-type: none;
 }
 .wrapper{
-    position: relative;
+    /* position: relative; */
     width: 1600px;
     background-color: var(--white);
     margin: 0 auto;
@@ -54,7 +55,7 @@ ul{
 }
 
 .nav__items__list a{
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 23px;
     color: var(--dark-gray);
     opacity: 0.5;
@@ -105,16 +106,6 @@ ul{
     mix-blend-mode: normal;
 }
 
-/* .left .btn{
-    width: 200px;
-    height: 56px;
-    border-radius: 55px;
-    padding: 15px 40px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 60px;
-} */
-
 .hero__container__right{
     width: 693px;
     height: 598px;
@@ -125,7 +116,7 @@ ul{
 
 /* Serives start */
 .services{
-    position: relative;
+    /* position: relative; */
     width: 1675.58px;
     height: 1133px;
     margin-top: 190px;
@@ -139,7 +130,7 @@ ul{
 .h__services__header{
     width: 212px;
     height: 56px;
-    position: relative;
+    /* position: relative; */
     font-weight: bold;
     font-size: 36px;
     line-height: 56px;
@@ -168,7 +159,7 @@ ul{
 .services__header__word span {
     display: inline-block;
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 30px;
     text-align: center;
     color: var(--gray);
@@ -188,7 +179,7 @@ ul{
 }
 .services__container{
     width: 1120px;
-    position: relative;
+    /* position: relative; */
     margin-top: 80px;
     margin-left: 240px;
     margin-right: 240px;
@@ -206,7 +197,7 @@ ul{
 .services__item__img {
     width: 91.98px;
     height: 90.01px;
-    position: relative;
+    /* position: relative; */
     left: 37px;
     margin-top: 54px;
     margin-bottom: 22.4px;
@@ -244,7 +235,7 @@ ul{
 .services__item__img__two{
     width: 61.86px;
     height: 85px;
-    position: relative;
+    /* position: relative; */
     left: 37px;
     margin-top: 54px;
     margin-bottom: 19.41px;
@@ -275,7 +266,7 @@ ul{
 .services__item__img__three{
     width: 67.29px;
     height: 95px;
-    position: relative;
+    /* position: relative; */
     left: 38px;
     margin-top: 54px;
     margin-bottom: 24.41px;
@@ -314,7 +305,7 @@ ul{
 .services__item__img__four{
     width: 67.08px;
     height: 95px;
-    position: relative;
+    /* position: relative; */
     left: 38px;
     margin-top: 46px;
     margin-bottom: 25.41px;
@@ -345,7 +336,7 @@ ul{
 .services__item__img__five{
     width: 80px;
     height: 71.15px;
-    position: relative;
+    /* position: relative; */
     left: 38px;
     margin-top: 59px;
     margin-bottom: 36.25px;
@@ -376,7 +367,7 @@ ul{
 .services__item__img__six{
     width: 69.42px;
     height: 95px;
-    position: relative;
+    /* position: relative; */
     left: 38px;
     margin-top: 52px;
     margin-bottom: 19.41px;
@@ -413,7 +404,7 @@ ul{
     box-sizing: border-box;
     border-radius: 55px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     color: var(--blue);
     display: flex;
     justify-content: center;
@@ -439,7 +430,7 @@ ul{
 }
 
 .hero__container__leading__heading {
-    position: relative;
+    /* position: relative; */
     font-weight: bold;
     font-size: 36px;
     line-height: 56px;
@@ -461,25 +452,13 @@ ul{
 .hero__container__leading__desc {
     width: 450px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 30px;
     color: var(--gray);
     mix-blend-mode: normal;
     margin-bottom: 37px;
 }
-/* .hero__container__leading__btn {
-    width: 200px;
-    height: 60px;
-    border: 1.4px solid #458FF6;
-    box-sizing: border-box;
-    border-radius: 55px;
-    font-weight: bold;
-    font-size: 18px;
-    color: var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 /* Hero container leading end */
 /* Hero container mobile start */
 .hero__container__mobile {
@@ -500,7 +479,7 @@ ul{
 }
 
 .hero__container__mobile__heading {
-    position: relative;
+    /* position: relative; */
     width: 254px;
     font-weight: bold;
     font-size: 36px;
@@ -523,26 +502,12 @@ ul{
 .hero__container__mobile__desc {
     width: 420px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 30px;
     color: #7D7987;
     mix-blend-mode: normal;
     margin-bottom: 40px;
 }
-
-/* .hero__container__mobile__button {
-    width: 200px;
-    height: 60px;
-    border: 1.4px solid #458FF6;
-    box-sizing: border-box;
-    border-radius: 55px;
-    font-weight: bold;
-    font-size: 18px;
-    color: var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .hero__container__mobile__button__icon {
     margin-left: 14.79px;
@@ -560,7 +525,7 @@ ul{
 .testimonials__container {
     width: 1120px;
     height: 425px;
-    position: relative;
+    /* position: relative; */
     margin: 15px 47.58px 62px 52px;
     background: linear-gradient(
 208.18deg
@@ -580,7 +545,7 @@ ul{
 .testimonials__header {
     text-align: center;
     margin-top: 64px;
-    position: relative;
+    /* position: relative; */
 }
 
 .h__testimonials__header {
@@ -633,7 +598,7 @@ ul{
 
 .founder {
     font-weight: normal;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 48px;
     color: rgba(255, 255, 255, 0.85);
     mix-blend-mode: normal;
@@ -696,7 +661,7 @@ ul{
 
 .checkout__title {
     width: 462px;
-    position: relative;
+    /* position: relative; */
     font-weight: bold;
     font-size: 36px;
     line-height: 56px;
@@ -735,7 +700,7 @@ ul{
 }
 
 .checkout__item{
-    position: relative;
+    /* position: relative; */
     width: 350px;
     height: 512px;
     margin-top: 107px;
@@ -801,24 +766,10 @@ ul{
     margin-left: 509px;
 }
 
-/* .checkout__btn {
-    width: 200px;
-    height: 60px;
-    border: 1.4px solid #458FF6;
-    box-sizing: border-box;
-    border-radius: 55px;
-    font-weight: bold;
-    font-size: 18px;
-    color: var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 /* End Checkout */
 /* Start Footer */
 .footer {
-    position: relative;
+    /* position: relative; */
     width: 1638px;
     height: 523px;
     background-color: #fff;
@@ -827,14 +778,17 @@ ul{
 .footer__element{
     /* position: absolute; */
     right: 5.71%;
+    top: 12.92px;
     margin-right: 91.42px;
+    height: 115px;
 }
 
 .footer__bg {
-    position: relative;
+    /* position: absolute; */
     width: 1600px;
     height: 432px;
-    top: 72px;
+    overflow: hidden;
+    bottom: 0;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
 }
 
@@ -889,7 +843,7 @@ ul{
     width: 391px;
     height: 84px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 28px;
     color: var(--white);
     margin-bottom: 31px;
@@ -922,7 +876,7 @@ ul{
 
 .company__list__item {
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 38px;
     color: var(--white);
     mix-blend-mode: normal;
@@ -946,7 +900,7 @@ ul{
 
 .region__list__item {
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 38px;
     color: var(--white);
     mix-blend-mode: normal;
@@ -962,7 +916,7 @@ ul{
 
 .help__list__item {
     font-weight: 300;
-    font-size: 18px;
+    font-size: var(--base-font-size);
     line-height: 38px;
     color: var(--white);
     mix-blend-mode: normal;
@@ -994,6 +948,10 @@ ul{
 
 .d__flex{
     display: flex;
+}
+
+.p--relative {
+    position: relative;
 }
 
 .p--absolute {
