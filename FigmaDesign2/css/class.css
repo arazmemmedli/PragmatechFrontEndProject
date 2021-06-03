@@ -1,0 +1,15 @@
+.d--flex {
+  display: flex;
+}
+
+.p--absolute {
+  position: absolute;
+}
+
+.p--relative {
+  position: relative;
+}
+
+.d--grid {
+  display: grid;
+}/*# sourceMappingURL=class.css.map */
