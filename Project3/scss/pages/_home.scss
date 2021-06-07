@@ -1,0 +1,149 @@
+.container-fluid{
+    padding-left: 0px;
+    .header{
+        width: 100%;
+        grid-template-columns: 34% 59% 2%;
+        align-items: center;
+        z-index: 100;
+        top: 50px;
+        left: 80px;
+        &__logo{
+            &__link{
+                display: inline-block;
+                height: 52.6px;
+                .header__logo__img{
+                   width: 100px;
+                   max-width: 100px; 
+                }
+            }
+        }
+        &__nav{
+            &__list{
+                &__item{
+                    &:hover .header__nav__list__item__link::after{
+                        bottom: 2px;
+                    }
+                    &__link{
+                        display: inline-block;
+                        font-size: $font--size-primary;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: $clr--primary-dark;
+                        font-family: $font--family-main;
+                        font-weight: $font--weight-secondary;
+                        overflow: hidden;
+                        padding: 5px 15px;
+                        &.activate{
+                            color: $clr--primary-main;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 15px;
+                            right: 15px;
+                            height: 1px;
+                            bottom: -3px;
+                            background-color: #F68338;
+                            z-index: -1;
+                            pointer-events: none;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+        }
+        &__nav__toggle{
+            width: 40px;
+            margin-left: -80px;
+        }
+    }
+    .socials{
+        bottom: 35px;
+        z-index: 1;
+        left: 80px;
+        &__menu{
+            &__list{
+                &__item{
+                    width: 50px;
+                    &__link{
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: $font--size-light;
+                        background-color: $clr--primary-main;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: $clr--primary-light;
+                        transition: all .3s ease;
+                        &:hover{
+                            background-color: $clr--secondary-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left-side{
+        width: 39.6%;
+        height: 100%;
+            &__bg__plan{
+                &__img{
+                    background-image: url(/images/slider.jpg);
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .left-side__bg__overlay{
+                    z-index: 3;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 180px;
+                    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, .8)));
+                    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 70%);
+                    background-image: linear-gradient(
+                0deg
+                , rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 70%);
+                    pointer-events: none;
+                }
+                .left-side__bg__expand{
+                    display: block;
+                    bottom: 0;
+                    left: 33.7%;
+                    background: #111;
+                    text-align: center;
+                    a{
+                        display: inline-block;
+                        height: 108px;
+                        width: 90px;
+                        color: white;
+                        font-size: 25px;
+                        line-height: 108px;
+                    }
+                }
+            }
+    }
+    .right__content__wrap{
+        position: relative;
+        width: 92.5%;
+        left: 9%;
+        height: 100%;
+        padding-top: 160px;
+        padding-left: 80px;
+        padding-right: 80px;
+        &::before{
+            content: "";
+            width: 61%;
+            position: fixed;
+            top: 0;
+            left: 39.6%;
+            height: 140px;
+            z-index: 10;
+            background: $clr--secondary-main;
+            
+        }
+    }
+}
