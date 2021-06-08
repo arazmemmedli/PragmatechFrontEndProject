@@ -4,6 +4,7 @@ $clr--primary-dark: #888;
 $clr--primary-light: #fff;
 $clr--secondary-main: #191919;
 $clr--secondary-dark: #111;
+$clr--secondary-disabled: #222;
 
 // Font family varibales
 $font--family-main: 'Oswald', sans-serif;
@@ -13,6 +14,7 @@ $font--family-primary: 'Rambla', sans-serif;
 $font--weight-main: bold;
 $font--weight-primary: 500;
 $font--weight-secondary: 400;
+$font--weight-success: 700;
 
 // Font size variables
 $font--size-main: 30px;
@@ -20,6 +22,9 @@ $font--size-primary:14px;
 $font--size-secondary: 12px;
 $font--size-light: 15px;
 $font--size-third: 18px;
+$font--size-success: 25px;
+$font--size-fourth: 35px;
+$font--size-fifth: 13px;
 
 // Reset variables
 $margin: 0px;

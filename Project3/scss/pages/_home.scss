@@ -1,5 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
 .container-fluid{
     padding-left: 0px;
+    // Header 
     .header{
         width: 100%;
         grid-template-columns: 34% 59% 2%;
@@ -19,6 +24,7 @@
         }
         &__nav{
             &__list{
+                padding-left: 30%;
                 &__item{
                     &:hover .header__nav__list__item__link::after{
                         bottom: 2px;
@@ -55,8 +61,13 @@
         &__nav__toggle{
             width: 40px;
             margin-left: -80px;
+            a{
+                color: $clr--primary-main;
+            }
         }
     }
+    // Header End
+    // Social Media
     .socials{
         bottom: 35px;
         z-index: 1;
@@ -84,6 +95,8 @@
             }
         }
     }
+    // Social Media end
+    // Left Side
     .left-side{
         width: 39.6%;
         height: 100%;
@@ -113,27 +126,29 @@
                     display: block;
                     bottom: 0;
                     left: 33.7%;
-                    background: #111;
+                    background: $clr--secondary-dark;
                     text-align: center;
                     a{
                         display: inline-block;
                         height: 108px;
                         width: 90px;
-                        color: white;
-                        font-size: 25px;
+                        color: $clr--primary-light;
+                        font-size: $font--size-success;
                         line-height: 108px;
                     }
                 }
             }
     }
+    // Left Side end
+    // Right Content
     .right__content__wrap{
-        position: relative;
-        width: 92.5%;
+        width: 93%;
         left: 9%;
         height: 100%;
         padding-top: 160px;
         padding-left: 80px;
         padding-right: 80px;
+        background-color: $clr--secondary-main;
         &::before{
             content: "";
             width: 61%;
@@ -145,5 +160,197 @@
             background: $clr--secondary-main;
             
         }
+        // About Me Start
+        .about{
+            &__title__small{
+                display: block;
+                font-family: $font--family-main;
+                font-size: $font--size-secondary;
+                text-transform: uppercase;
+                color: $clr--primary-main;
+                font-weight: $font--weight-secondary;
+                letter-spacing: 5px;
+            }
+            &__title{
+                color: $clr--primary-light;
+                font-family: $font--family-main;
+                margin-bottom: 20px;
+                font-weight: $font--weight-primary;
+                font-size: $font--size-main;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                line-height: 1.5em;
+            }
+            &__content{
+                &__container{
+                    &__column{
+                        .about__content__description{
+                            font-family: $font--family-primary;
+                            font-size: $font--size-light;
+                            line-height: 1.75em;
+                            font-weight: $font--weight-secondary;
+                            color: $clr--primary-dark;
+                            margin: 0 0 20px;
+                        }
+                        .about__content__strong{
+                            font-weight: $font--weight-main;
+                            color: $clr--primary-light;
+                        }
+
+                    }
+                }
+            }
+        }
+        // About Me End
+        // Divider
+        .divider1{
+            height: 1px;
+            width: 100%;
+            background: $clr--secondary-disabled;
+            margin: 60px 0;
+        }
+        // Divider End
+        // Services Start
+        .services{
+            &__title__small{
+                display: block;
+                font-family: $font--family-main;
+                font-size: $font--size-secondary;
+                text-transform: uppercase;
+                color: $clr--primary-main;
+                font-weight: $font--weight-secondary;
+                letter-spacing: 5px;
+            }
+            &__title{
+                color: $clr--primary-light;
+                font-family: $font--family-main;
+                margin-bottom: 20px;
+                font-weight: $font--weight-primary;
+                font-size: $font--size-main;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                line-height: 1.5em;
+            }
+            &__content{
+                .container{
+                    .services__content__item{
+                        width: 100%;
+                        margin-bottom: 30px;
+                        padding: 30px;
+                        border: 1px solid $clr--secondary-disabled;
+                        text-align: center;
+                        margin-left: -16px;
+                        &__icon{
+                            text-align: center;
+                            background: transparent;
+                            margin-bottom: 10px;
+                            span{
+                                width: 45px;
+                                display: inline-block;
+                                color: $clr--primary-main;
+                                font-size: $font--size-fourth;
+                            }
+                        }
+                        &__text{
+                            h3{
+                                font-weight: $font--weight-success;
+                                margin-bottom: 10px;
+                                color: $clr--primary-light;
+                                font-size: $font--size-third;
+                                font-family: $font--family-primary;
+                            }
+                            p{
+                                font-family: $font--family-primary;
+                                font-size: $font--size-light;
+                                line-height: 1.75em;
+                                font-weight: $font--weight-secondary;
+                                color: $clr--primary-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Services End
+        // Copyright
+        .copyright{
+            margin-top: 50px;
+            padding: 50px 0px 150px 0px;
+            border-top: 1px solid $clr--secondary-disabled;
+            &__text{
+                font-family: 'Rambla', sans-serif;
+                font-weight: $font--weight-secondary;
+                font-size: $font--size-light;
+                line-height: 1.75em;
+                color: $clr--primary-dark;
+            }
+            &__link{
+                color: $clr--primary-main;
+                font-weight: $font--weight-primary;
+                background-color: transparent;
+            }
+        }
+        // Copyright End
+    }
+    // My İnfo
+    .my-info{
+        right: 0;
+        width: 60.5%;
+        background-color: #111;
+        top: auto;
+        bottom: 0;
+        z-index: 4;
+        height: 108px;
+        &__box{
+            &__item{
+                padding: 30px 20px;
+                min-width: 200px;
+                h6{
+                    margin: 0;
+                    font-family: $font--family-main;
+                    font-size: $font--size-light;
+                    font-weight: $font--weight-secondary;
+                    color: $clr--primary-light;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                p{
+                    margin: 0;
+                    font-size: $font--size-light;
+                    font-family: $font--family-primary;
+                    padding: 0;
+                    color: $clr--primary-main;
+                    line-height: 1.75em;
+                    font-weight: $font--weight-secondary;
+                }
+            }
+            &__btn{
+                width: 100%;
+                margin-right: 0;
+                padding: 0;
+                height: 108px;
+                line-height: 108px;
+                border: none;
+                text-transform: uppercase;
+                font-size: $font--size-light;
+                font-weight: $font--weight-secondary;
+                font-family: $font--family-main;
+                background: $clr--primary-main;
+                letter-spacing: 2px;
+                color: $clr--primary-light;
+                cursor: pointer;
+            }
+        }
+    }
+    // My Info End
+    .menu-overlay{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: $clr--secondary-dark;
+        left: auto;
+        width: 540px;
+        z-index: 8;
+        right: 0;
     }
 }
