@@ -1,0 +1,271 @@
+.right__content__wrap{
+    // Blog
+    .blog{
+        &__title__small{
+            display: block;
+            font-family: $font--family-main;
+            font-size: $font--size-secondary;
+            text-transform: uppercase;
+            color: $clr--primary-main;
+            font-weight: $font--weight-secondary;
+            letter-spacing: 5px;
+        }
+        &__title{
+            color: $clr--primary-light;
+            font-family: $font--family-main;
+            margin-bottom: 20px;
+            font-weight: $font--weight-primary;
+            font-size: $font--size-main;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+        &__content{
+            .container{
+                .blog__content__list{
+                    left: -28px;
+                    .blog__content__post{
+                        margin-bottom: 60px;
+                        &__media{
+                            margin-bottom: 20px;
+                            &__link{
+                                display: block;
+                                img{
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        &__body{
+                            display: block;
+                            &__title{
+                                font-family: $font--family-primary;
+                                font-size: $font--size-dark;
+                                font-weight: $font--weight-success;
+                                margin-bottom: 0px;
+                                a{
+                                    color: $clr--primary-light;
+                                }
+                            }
+                            &__data{
+                                color: $clr--primary-dark;
+                                margin-bottom: 10px;
+                                margin-top: 4px;
+                                .blog__content__post__data__date{
+                                    text-decoration: none;
+                                    font-weight: $font--weight-secondary;
+                                    font-size: $font--size-fifth;
+                                    font-family: $font--family-primary;
+                                }
+                                .blog__content__post__data__comments{
+                                    &::before{
+                                        content: "—";
+                                        display: inline-block;
+                                        color: rgb(246, 131, 56);
+                                        margin: 0px 0.6rem 0px 0.4rem;
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                        font-family: $font--family-primary;
+                                        font-weight: $font--weight-secondary;
+                                        font-size: $font--size-fifth;
+                                        color: $clr--primary-dark;
+                                    }
+                                }
+                            }
+                            &__info{
+                                p{
+                                    font-family: $font--family-primary;
+                                    font-size: $font--size-light;
+                                    line-height: 1.75em;
+                                    font-weight: $font--weight-secondary;
+                                    color: $clr--primary-dark;
+                                    margin: 0 0 20px;
+                                }
+                            }
+                        }
+                    }
+                    .blog__navigation{
+                        text-align: center;
+                        margin-bottom: 60px;
+                        margin-top: 60px;
+                        ul{
+                            .blog__navigation__pages{
+                                display: inline-block;
+                                margin: 0 5px;
+                                a{
+                                    color: $clr--primary-dark;
+                                    border: 1px solid transparent;
+                                    background-color: transparent;
+                                    padding: 5px 15px 5px 15px;
+                                    display: block;
+                                    transition: all 0.4s;
+                                    text-decoration: none;
+                                    font-family: $font--family-primary;
+                                    &:hover{
+                                        border: 1px solid $clr--secondary-disabled;
+                                        background-color: $clr--secondary-disabled;
+                                        color: $clr--primary-light;
+                                    }
+                                }
+                                a.b--active{
+                                    border: 1px solid $clr--secondary-disabled;
+                                    background-color: $clr--secondary-disabled;
+                                    color: $clr--primary-light;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blog__sidebar__part{
+                    .blog__sidebar__search{
+                        margin-bottom: 35px;
+                        .blog__sidebar__search__form {
+                            .blog__sidebar__search__input{
+                                max-width: 100%;
+                                margin-bottom: 15px;
+                                border-color: $clr--secondary-disabled;
+                                padding: 10px 15px;
+                                height: auto;
+                                background-color: $clr--secondary-disabled;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                border: none;
+                                outline: none;
+                                display: block;
+                                width: 100%;
+                                font-size: $font--size-light;
+                                line-height: 1.5em;
+                                font-weight: $font--weight-secondary;
+                                color: $clr--primary-dark;
+                                background-image: none;
+                            }
+                            .blog__sidebar__search__btn{
+                                right: 0px;
+                                top: 0px;
+                                background: none;
+                                cursor: pointer;
+                                border: 0;
+                                padding: 12px 15px;
+                                font-size: $font--size-sixth;
+                                transition: all 0.3s;
+                                color: $clr--primary-dark;
+                                background: transparent;
+                            }
+                        }
+                    }
+                    .blog__sidebar__categories{
+                        margin-bottom: 35px;
+                        &__title{
+                            color: $clr--primary-light;
+                            text-decoration: none;
+                            font-family: $font--family-primary;
+                            font-weight: $font--weight-success;
+                            font-size: $font--size-disabled;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        &__content{
+                            .blog__sidebar__categories__list{
+                                &__item{
+                                    padding: 8px 0;
+                                    border-bottom: 1px solid $clr--secondary-disabled;
+                                    line-height: 32px;
+                                    &__link{
+                                        color: $clr--primary-dark;
+                                        font-family: $font--family-primary;
+                                        font-weight: $font--weight-secondary;
+                                        text-decoration: none;
+                                        display: block;
+                                        transition: all 0.3s ease-out;
+                                        &:hover{
+                                            color: $clr--primary-main;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .blog__sidebar__latest__posts{
+                        margin-bottom: 35px;
+                        &__title{
+                            display: block;
+                            color: $clr--primary-light;
+                            text-decoration: none;
+                            font-family: $font--family-primary;
+                            font-weight: $font--weight-success;
+                            font-size: $font--size-disabled;
+                            margin-bottom: 10px;
+                        }
+                        &__content{
+                            &__item{
+                                margin-bottom: 10px;
+                                border-bottom: 1px solid $clr--secondary-disabled;
+                                padding-bottom: 10px;
+                                .blog__sidebar__latest__posts__clearfix{
+                                    color: $clr--primary-dark;
+                                    display: block;
+                                    text-decoration: none;
+                                    &:hover .blog__sidebar__latest__posts__content__text1{
+                                        color: $clr--primary-main;
+                                    }
+                                    .blog__sidebar__latest__posts__content__text1{
+                                        font-family: $font--family-primary;
+                                        font-weight: $font--weight-secondary;
+                                        line-height: 1.5em;
+                                        transition: all .3s ease;
+                                    }
+                                    .blog__sidebar__latest__posts__content__text2{
+                                        color: $clr--primary-dark;
+                                        font-family: $font--family-primary;
+                                        font-size: $font--size-fifth;
+                                        font-weight: $font--weight-secondary;
+                                        margin-top: 10px;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .blog__sidebar__tags{
+                        margin-bottom: 35px;
+                        &__title{
+                            color: $clr--primary-light;
+                            text-decoration: none;
+                            font-family: $font--family-primary;
+                            font-weight: $font--weight-success;
+                            font-size: $font--size-disabled;
+                            margin-bottom: 10px;
+                        }
+                        &__content{
+                            &__list{
+                                &__item{
+                                    display: inline-block;
+                                    margin: 0 5px 5px 0px;
+                                    &__link{
+                                        display: inline-block;
+                                        background: transparent;
+                                        border: 1px solid $clr--secondary-disabled;
+                                        padding: 10px 12px;
+                                        border-radius: 0px;
+                                        text-decoration: none;
+                                        font-family: $font--family-primary;
+                                        font-size: $font--size-fifth;
+                                        font-weight: $font--weight-secondary;
+                                        color: $clr--primary-dark;
+                                        transition: all 0.3s ease-out;
+                                        &:hover{
+                                            background-color: $clr--primary-main;
+                                            color: $clr--primary-light;
+                                            border-color: $clr--primary-main;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

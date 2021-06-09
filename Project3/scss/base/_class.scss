@@ -16,15 +16,15 @@
 .btn{
     padding: 8px 20px;
     cursor: pointer;
-    background: #F68338;
+    background: $clr--primary-main;
     -webkit-appearance: none;
     position: relative;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
+    color: $clr--primary-light;
+    font-size: $font--size-light;
+    font-weight: $font--weight-secondary;
     display: inline-block;
     border-radius: 0;
-    border: 1px solid #F68338;
+    border: 1px solid $clr--primary-main;
     transition: all .3s ease;
     &:hover{
         color: $clr--primary-light;

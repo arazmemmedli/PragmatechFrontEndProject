@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header Start -->
+        <header class="header d--grid p--fixed">   
+            <div class="header__logo">
+                <a href="index.html" class="header__logo__link">
+                    <img class="header__logo__img" src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Menu -->
+            <nav class="header__nav">
+                <ul class="header__nav__list d--flex">
+                    <li class="header__nav__list__item">
+                        <a class="header__nav__list__item__link activate p--relative" href="index.html">Ana Səhifə</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="header__nav__list__item__link p--relative" href="resume.html">Xülasə</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="header__nav__list__item__link p--relative" href="portfolio.html">Portfel</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="header__nav__list__item__link p--relative" href="blog.html">Blog</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="header__nav__list__item__link p--relative" href="contact.html">Əlaqə</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Toggle -->
+            <div class="header__nav__toggle">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Social Media -->
+        <div class="socials p--fixed">
+            <nav class="socials__menu">
+                <ul class="socials__menu__list d--flex">
+                    <li class="socials__menu__list__item">
+                        <a href="https://www.facebook.com/" target="_blank" class="socials__menu__list__item__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="socials__menu__list__item">
+                        <a href="https://twitter.com/" target="_blank" class="socials__menu__list__item__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="socials__menu__list__item">
+                        <a href="https://www.instagram.com/" target="_blank" class="socials__menu__list__item__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        <!-- Social Media End -->
+        <div class="row">
+            <div class="col-4">
+                <!-- Left Side Start -->
+                <div class="left-side p--fixed">
+                    <div class="left-side__bg__plan">
+                        <div class="left-side__bg__plan__img p--absolute"></div>
+                        <div class="left-side__bg__overlay p--absolute"></div>
+                        <div class="left-side__bg__expand p--fixed">
+                            <a href="#">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left Side End -->
+            </div>
+            <div class="col-8">
+                <!-- RIght Content -->
+                <div class="right__content__wrap p--relative">
+                    <!-- Blog Start -->
+                    <div class="blog">
+                        <h3 class="blog__title__small">BLOG</h3>
+                        <h2 class="blog__title">SON XƏBƏRLƏR</h2>
+                        <div class="blog__content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <!-- Blog Posts -->
+                                        <div class="blog__content__list p--relative">
+                                            <div class="blog__content__post">
+                                                <div class="blog__content__post__media">
+                                                    <a class="blog__content__post__media__link p--relative" href="#">
+                                                        <img src="images/1.jpg" alt="Blog Post1">
+                                                    </a>
+                                                </div>
+                                                <div class="blog__content__post__body">
+                                                    <h4 class="blog__content__post__body__title">
+                                                        <a href="#">Vivamus aliquam the sapien</a>
+                                                    </h4>
+                                                    <div class="blog__content__post__body__data">
+                                                        <span class="blog__content__post__data__date">28 Dec 2020</span>
+                                                        <span class="blog__content__post__data__comments">
+                                                            <a href="#">3 Comments</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="blog__content__post__body__info">
+                                                        <p>Nulla quis laoreet velit. Pelteqle quisu velleopha retra congue. Lorem ipsuen dolorin sitame consectetur adipiscing elit. Donec hendrerit dui sapien coner consequat erose viverra ati aliquam est moli egemen.</p>
+                                                        <a href="#" class="btn">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog__content__post">
+                                                <div class="blog__content__post__media">
+                                                    <a class="blog__content__post__media__link p--relative" href="#">
+                                                        <img src="images/2.jpg" alt="Blog Post2">
+                                                    </a>
+                                                </div>
+                                                <div class="blog__content__post__body">
+                                                    <h4 class="blog__content__post__body__title">
+                                                        <a href="#">Maecen tincidunt the lonan</a>
+                                                    </h4>
+                                                    <div class="blog__content__post__body__data">
+                                                        <span class="blog__content__post__data__date">26 Dec 2020</span>
+                                                        <span class="blog__content__post__data__comments">
+                                                            <a href="#">3 Comments</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="blog__content__post__body__info">
+                                                        <p>Nulla quis laoreet velit. Pelteqle quisu velleopha retra congue. Lorem ipsuen dolorin sitame consectetur adipiscing elit. Donec hendrerit dui sapien coner consequat erose viverra ati aliquam est moli egemen.</p>
+                                                        <a href="#" class="btn">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog__content__post">
+                                                <div class="blog__content__post__media">
+                                                    <a class="blog__content__post__media__link p--relative" href="#">
+                                                        <img src="images/3.jpg" alt="Blog Post3">
+                                                    </a>
+                                                </div>
+                                                <div class="blog__content__post__body">
+                                                    <h4 class="blog__content__post__body__title">
+                                                        <a href="#">Sodales vivense hendrerit</a>
+                                                    </h4>
+                                                    <div class="blog__content__post__body__data">
+                                                        <span class="blog__content__post__data__date">24 Dec 2020</span>
+                                                        <span class="blog__content__post__data__comments">
+                                                            <a href="#">3 Comments</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="blog__content__post__body__info">
+                                                        <p>Nulla quis laoreet velit. Pelteqle quisu velleopha retra congue. Lorem ipsuen dolorin sitame consectetur adipiscing elit. Donec hendrerit dui sapien coner consequat erose viverra ati aliquam est moli egemen.</p>
+                                                        <a href="#" class="btn">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog__navigation">
+                                                <ul>
+                                                    <li class="blog__navigation__pages blog__navigation__prev">
+                                                        <a href="#">
+                                                            <i class="bi bi-chevron-left"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="blog__navigation__pages">
+                                                        <a href="#">1</a>
+                                                    </li>
+                                                    <li class="blog__navigation__pages">
+                                                        <a class="b--active" href="#">2</a>
+                                                    </li>
+                                                    <li class="blog__navigation__pages">
+                                                        <a href="#">3</a>
+                                                    </li>
+                                                    <li class="blog__navigation__pages blog__navigation__next">
+                                                        <a href="#">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <!-- Right Sidebar Part -->
+                                        <div class="blog__sidebar__part">
+                                            <!-- Right Sidebar Part Search -->
+                                            <div class="blog__sidebar__search p--relative">
+                                                <form action="" class="blog__sidebar__search__form p--relative">
+                                                    <input class="blog__sidebar__search__input" type="text" name="name" id="search" placeholder="Search...">
+                                                    <button type="submit" class="blog__sidebar__search__btn p--absolute">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <!-- Right Sidebar Part Categories -->
+                                            <div class="blog__sidebar__categories p--relative">
+                                                <span class="blog__sidebar__categories__title">Kateqoriyalar</span>
+                                                <div class="blog__sidebar__categories__content">
+                                                    <ul class="blog__sidebar__categories__list">
+                                                        <li class="blog__sidebar__categories__list__item">
+                                                            <a class="blog__sidebar__categories__list__item__link" href="#">UX Design</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__categories__list__item">
+                                                            <a class="blog__sidebar__categories__list__item__link" href="#">Media Planing</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__categories__list__item">
+                                                            <a class="blog__sidebar__categories__list__item__link" href="#">Brand Identity</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__categories__list__item">
+                                                            <a class="blog__sidebar__categories__list__item__link" href="#">Digital Art</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Right Sidebar Part Latest Posts -->
+                                            <div class="blog__sidebar__latest__posts p--relative">
+                                                <div class="blog__sidebar__latest__posts__title">
+                                                    <span>Son Mesajlar</span>
+                                                </div>
+                                                <div class="blog__sidebar__latest__posts__content">
+                                                    <div class="blog__sidebar__latest__posts__content__item">
+                                                        <a href="#" class="blog__sidebar__latest__posts__clearfix">
+                                                            <div class="blog__sidebar__latest__posts__content__text1">
+                                                                <span>Vivamus drana aliquam the miss lorem ipsum sapien</span>
+                                                            </div>
+                                                            <div class="blog__sidebar__latest__posts__content__text2">
+                                                                <span>27 Sep 2020</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog__sidebar__latest__posts__content__item">
+                                                        <a href="#" class="blog__sidebar__latest__posts__clearfix">
+                                                            <div class="blog__sidebar__latest__posts__content__text1">
+                                                                <span>Maecen tincidun the emin lonan vivense drana monte</span>
+                                                            </div>
+                                                            <div class="blog__sidebar__latest__posts__content__text2">
+                                                                <span>26 Sep 2020</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog__sidebar__latest__posts__content__item">
+                                                        <a href="#" class="blog__sidebar__latest__posts__clearfix">
+                                                            <div class="blog__sidebar__latest__posts__content__text1">
+                                                                <span>Sodales vivense the miss drana fundam nune hendrerit</span>
+                                                            </div>
+                                                            <div class="blog__sidebar__latest__posts__content__text2">
+                                                                <span>25 Sep 2020</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Right Sidebar Part Tags -->
+                                            <div class="blog__sidebar__tags p--relative">
+                                                <div class="blog__sidebar__tags__title">
+                                                    <span>Etiketlər</span>
+                                                </div>
+                                                <div class="blog__sidebar__tags__content">
+                                                    <ul class="blog__sidebar__tags__content__list">
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Design</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">SEO</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Responsive</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Bootstrap</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Digital Marketing</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Wordpress</a>
+                                                        </li>
+                                                        <li class="blog__sidebar__tags__content__list__item">
+                                                            <a href="#" class="blog__sidebar__tags__content__list__item__link">Usability</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog End -->
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p class="copyright__text">
+                            @ 2020
+                            <a href="index.html" class="copyright__link">MeMmedli</a>
+                            . All Rights Reserved.
+                        </p>
+                    </div>
+                    <!-- Copyright End -->
+                </div>
+            </div>
+        </div>
+        <!-- My Info -->
+        <div class="my-info p--fixed">
+            <div class="my-info__box d--flex">
+                <div class="my-info__box__item">
+                    <h6>Yer</h6>
+                    <p>Bakü, AZ</p>
+                </div>
+                <div class="my-info__box__item">
+                    <h6>E-Mail</h6>
+                    <p>a.memmedli111@gmail.com</p>
+                </div>
+                <div class="my-info__box__item">
+                    <h6>Telefon</h6>
+                    <p>+994506225576</p>
+                </div>
+                <button type="submit" class="my-info__box__btn">
+                    <span><i class="bi bi-download"></i></span>
+                    CV İndirin
+                </button>
+            </div>
+        </div>
+        <!-- My Info End -->
+    </div>
+</body>
+</html>

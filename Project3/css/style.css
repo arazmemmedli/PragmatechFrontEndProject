@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -537,6 +538,7 @@ body {
   margin-top: 0px;
   font-weight: 700;
   color: #fff;
+  height: 21.6px;
   font-size: 18px;
   font-family: "Rambla", sans-serif;
 }
@@ -547,6 +549,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #888;
+  height: 25.6px;
   transition: all 0.3s ease;
 }
 .right__content__wrap .experience__content__container__timeline li .experience__content__timeline__box p {
@@ -557,4 +560,391 @@ body {
   color: #888;
   margin-top: 5px;
   margin-bottom: 30px;
+}
+
+.right__content__wrap .portfolio__title__small {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #F68338;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.right__content__wrap .portfolio__title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box {
+  margin-bottom: 30px;
+  left: -16px;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box:hover .portfolio__content__box__item {
+  opacity: 1;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box:hover h3 {
+  transform: translate3d(0, 0px, 0);
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box:hover span {
+  transform: translate3d(0, 0px, 0);
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box__img {
+  max-width: 100%;
+  height: auto;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box__item {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  background: rgba(246, 131, 56, 0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box__item__con {
+  padding: 30px;
+  display: block;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box__item__con h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Rambla", sans-serif;
+  transform: translate3d(0, -15px, 0);
+  margin-bottom: 15px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.right__content__wrap .portfolio__content .container .portfolio__content__box__item__con span {
+  display: block;
+  color: #fff;
+  font-family: "Rambla", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translate3d(0, 15px, 0);
+}
+
+.right__content__wrap .blog__title__small {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #F68338;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.right__content__wrap .blog__title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+.right__content__wrap .blog__content .container .blog__content__list {
+  left: -28px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post {
+  margin-bottom: 60px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__media {
+  margin-bottom: 20px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__media__link {
+  display: block;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__media__link img {
+  max-width: 100%;
+  height: auto;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body {
+  display: block;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__title {
+  font-family: "Rambla", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__title a {
+  color: #fff;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__data {
+  color: #888;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__data .blog__content__post__data__date {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Rambla", sans-serif;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__data .blog__content__post__data__comments::before {
+  content: "—";
+  display: inline-block;
+  color: #f68338;
+  margin: 0px 0.6rem 0px 0.4rem;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__data .blog__content__post__data__comments a {
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #888;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__content__post__body__info p {
+  font-family: "Rambla", sans-serif;
+  font-size: 15px;
+  line-height: 1.75em;
+  font-weight: 400;
+  color: #888;
+  margin: 0 0 20px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__navigation {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__navigation ul .blog__navigation__pages {
+  display: inline-block;
+  margin: 0 5px;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__navigation ul .blog__navigation__pages a {
+  color: #888;
+  border: 1px solid transparent;
+  background-color: transparent;
+  padding: 5px 15px 5px 15px;
+  display: block;
+  transition: all 0.4s;
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__navigation ul .blog__navigation__pages a:hover {
+  border: 1px solid #222;
+  background-color: #222;
+  color: #fff;
+}
+.right__content__wrap .blog__content .container .blog__content__list .blog__navigation ul .blog__navigation__pages a.b--active {
+  border: 1px solid #222;
+  background-color: #222;
+  color: #fff;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__search {
+  margin-bottom: 35px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__search .blog__sidebar__search__form .blog__sidebar__search__input {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-color: #222;
+  padding: 10px 15px;
+  height: auto;
+  background-color: #222;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #888;
+  background-image: none;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__search .blog__sidebar__search__form .blog__sidebar__search__btn {
+  right: 0px;
+  top: 0px;
+  background: none;
+  cursor: pointer;
+  border: 0;
+  padding: 12px 15px;
+  font-size: 17px;
+  transition: all 0.3s;
+  color: #888;
+  background: transparent;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__categories {
+  margin-bottom: 35px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__categories__title {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__categories__content .blog__sidebar__categories__list__item {
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+  line-height: 32px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__categories__content .blog__sidebar__categories__list__item__link {
+  color: #888;
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__categories__content .blog__sidebar__categories__list__item__link:hover {
+  color: #F68338;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts {
+  margin-bottom: 35px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__title {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__content__item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__content__item .blog__sidebar__latest__posts__clearfix {
+  color: #888;
+  display: block;
+  text-decoration: none;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__content__item .blog__sidebar__latest__posts__clearfix:hover .blog__sidebar__latest__posts__content__text1 {
+  color: #F68338;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__content__item .blog__sidebar__latest__posts__clearfix .blog__sidebar__latest__posts__content__text1 {
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  transition: all 0.3s ease;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__latest__posts__content__item .blog__sidebar__latest__posts__clearfix .blog__sidebar__latest__posts__content__text2 {
+  color: #888;
+  font-family: "Rambla", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+  transition: all 0.3s ease-out;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__tags {
+  margin-bottom: 35px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__tags__title {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__tags__content__list__item {
+  display: inline-block;
+  margin: 0 5px 5px 0px;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__tags__content__list__item__link {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #222;
+  padding: 10px 12px;
+  border-radius: 0px;
+  text-decoration: none;
+  font-family: "Rambla", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+  transition: all 0.3s ease-out;
+}
+.right__content__wrap .blog__content .container .blog__sidebar__part .blog__sidebar__tags__content__list__item__link:hover {
+  background-color: #F68338;
+  color: #fff;
+  border-color: #F68338;
+}
+
+.right__content__wrap .contact__title__small {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #F68338;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.right__content__wrap .contact__title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+.right__content__wrap .contact__content .contact__content__wrapper .contact__content__desc {
+  font-family: "Rambla", sans-serif;
+  font-size: 15px;
+  line-height: 1.75em;
+  font-weight: 400;
+  color: #888;
+  margin: 0 0 20px;
+}
+.right__content__wrap .contact__content .contact__content__wrapper .contact__content__box {
+  padding-top: 5px;
+}
+.right__content__wrap .contact__content .contact__content__wrapper .contact__content__box__list__item {
+  display: block;
+  margin-bottom: 22px;
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #888;
+}
+.right__content__wrap .contact__content .contact__content__wrapper .contact__content__box__list__item strong {
+  font-family: "Rambla", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+.right__content__wrap .contact__content .contact__content__wrapper .contact__content__box__list__item__link {
+  color: #F68338;
+}
+.right__content__wrap .contact .contact__form__title {
+  margin-bottom: 20px;
+}
+.right__content__wrap .contact .contact__form__title strong {
+  font-family: "Rambla", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+.right__content__wrap .contact .contact__form .form__group__control {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-color: #222;
+  padding: 10px 15px;
+  height: auto;
+  background-color: #222;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-family: "Rambla", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #888;
+  background-image: none;
 }/*# sourceMappingURL=style.css.map */
