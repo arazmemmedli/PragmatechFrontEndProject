@@ -7,7 +7,7 @@ body {
     // Header 
     .header{
         width: 100%;
-        grid-template-columns: 34% 59% 2%;
+        grid-template-columns: 34% 60%;
         align-items: center;
         z-index: 100;
         top: 50px;
@@ -58,15 +58,30 @@ body {
                 }
             }
         }
-        &__nav__toggle{
-            width: 40px;
-            margin-left: -80px;
-            a{
-                color: $clr--primary-main;
-            }
-        }
     }
     // Header End
+    // Header Menu toggle
+    .header__nav__toggle{
+        width: 40px;
+        position: fixed;
+        z-index: 102;
+        right: 80px;
+        top: 50px;
+        cursor: pointer;
+        a{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $clr--primary-light;
+            background-color: $clr--primary-main;
+            font-size: $font--size-light;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background-color .3s, color .3s;
+        }
+    }
     // Social Media
     .socials{
         bottom: 35px;
@@ -292,6 +307,78 @@ body {
         }
         // Copyright End
     }
+    // Right Content End
+    // Two Menu
+    .two__menu__wrapper{
+        position: absolute;
+        z-index: 100;
+        top: 170px;
+        width: 380px;
+        margin-bottom: 80px;
+        right: 70px;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        &__title__small{
+            font-family: $font--family-main;
+            font-size: $font--size-secondary;
+            text-transform: uppercase;
+            color: $clr--primary-main;
+            font-weight: $font--weight-secondary;
+            letter-spacing: 5px;
+        }
+        &__title{
+            color: $clr--primary-light;
+            font-family: $font--family-main;
+            margin-bottom: 20px;
+            font-weight: $font--weight-primary;
+            font-size: $font--size-main;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+        &__img{
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__text{
+            font-family: $font--family-primary;
+            font-size: $font--size-light;
+            line-height: 1.75em;
+            font-weight: $font--weight-secondary;
+            color: $clr--primary-dark;
+            margin: 0 0 20px;
+        }
+        .seperator{
+            height: 1px;
+            width: 100%;
+            background: $clr--secondary-disabled;
+            margin: 60px 0;
+        }
+        &__content{
+            &__item{
+                a{
+                    float: left;
+                    width: 33.3%;
+                    padding: 5px;
+                    overflow: hidden;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    // Two Menu End
     // My İnfo
     .my-info{
         right: 0;
@@ -350,7 +437,21 @@ body {
         background-color: $clr--secondary-dark;
         left: auto;
         width: 540px;
-        z-index: 8;
+        z-index: 100;
         right: 0;
+        visibility: hidden;
+        opacity: 0;
+        &::before{
+            content: '';
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            right: 540px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            visibility: hidden;
+            opacity: 0;
+        }
     }
 }
