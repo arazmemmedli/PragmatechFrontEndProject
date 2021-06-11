@@ -24,7 +24,7 @@ body {
         }
         &__nav{
             &__list{
-                padding-left: 30%;
+                padding-left: 28%;
                 &__item{
                     &:hover .header__nav__list__item__link::after{
                         bottom: 2px;
@@ -60,6 +60,53 @@ body {
         }
     }
     // Header End
+    // Responsive Header Nav
+    .responsive__header{
+        top: 170px;
+        position: absolute;
+        z-index: 101;
+        right: 25%;
+        visibility: hidden;
+        opacity: 0;
+        .responsive__header__nav{
+            &__list{
+                padding-left: 28%;
+                &__item{
+                    margin-bottom: 30px;
+                    &:hover .header__nav__list__item__link::after{
+                        bottom: 2px;
+                    }
+                    &__link{
+                        display: inline-block;
+                        font-size: $font--size-primary;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: $clr--primary-dark;
+                        font-family: $font--family-main;
+                        font-weight: $font--weight-secondary;
+                        overflow: hidden;
+                        padding: 5px 15px;
+                        &.activate{
+                            color: $clr--primary-main;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 15px;
+                            right: 15px;
+                            height: 1px;
+                            bottom: -3px;
+                            background-color: #F68338;
+                            z-index: -1;
+                            pointer-events: none;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive Header Menu End
     // Header Menu toggle
     .header__nav__toggle{
         width: 40px;
