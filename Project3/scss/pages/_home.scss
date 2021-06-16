@@ -294,14 +294,13 @@ body {
                 line-height: 1.5em;
             }
             &__content{
-                .container{
+                .container-fluid{
                     .services__content__item{
                         width: 100%;
                         margin-bottom: 30px;
                         padding: 30px;
                         border: 1px solid $clr--secondary-disabled;
                         text-align: center;
-                        margin-left: -16px;
                         &__icon{
                             text-align: center;
                             background: transparent;
