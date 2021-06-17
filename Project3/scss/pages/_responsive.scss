@@ -251,9 +251,17 @@
         position: absolute !important;
         top: 30px !important;
         left: 15px !important;
+        z-index: 102 !important;
         &__nav{
             visibility: hidden !important;
             opacity: 0 !important;
+        }
+    }
+    .responsive__header{
+        left: 0 !important;
+        right: auto !important;
+        .responsive__header__nav__list{
+            padding-left: 0px !important;
         }
     }
     .header__nav__toggle{
