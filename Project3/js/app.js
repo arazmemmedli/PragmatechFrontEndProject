@@ -4,3 +4,9 @@ menuToogle.addEventListener('click', function(){
     document.querySelector('.two__menu__wrapper').classList.toggle('open');
     document.querySelector('.responsive__header').classList.toggle('open');
 })
+
+let fScreen = document.querySelector('.left-side__bg__expand a')
+fScreen.addEventListener('click', function(){
+    document.querySelector('.left-side').classList.toggle('full');
+    document.querySelector('.right__content__wrap').classList.toggle('close')
+})
