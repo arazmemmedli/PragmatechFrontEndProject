@@ -34,7 +34,7 @@
     }
 }
 .before{
-    visibility: visible !important;
+    display: block !important;
     opacity: 1 !important;
     &::before{
         opacity: 1 !important;

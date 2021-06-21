@@ -10,3 +10,8 @@ fScreen.addEventListener('click', function(){
     document.querySelector('.left-side').classList.toggle('full');
     document.querySelector('.right__content__wrap').classList.toggle('close')
 })
+
+let preloader = document.querySelector('.preloader');
+function myFunction(){
+    preloader.style.display = "none";
+}

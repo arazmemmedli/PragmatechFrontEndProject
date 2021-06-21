@@ -116,6 +116,8 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .header{
+        width: 10% !important;
+        grid-template-columns: 34% 0% !important;
         position: absolute !important;
         &__nav{
             visibility: hidden !important;
@@ -178,6 +180,8 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .header{
+        width: 50% !important;
+        grid-template-columns: 34% 10% !important;
         z-index: 102 !important;
         top: 30px !important;
         left: 15px !important;
