@@ -1,31 +1,3 @@
-// const adlar=['Iskender','Araz','Elvin','Aytac','Pakizer','Togrul']
-
-// function showLetters(){
-//     for(let i=0; i < adlar.length; i++){
-//         if(adlar[i].length>5){
-//             console.log(adlar[i])
-//         }
-//     }
-// }
-// showLetters()
-
-// function find(){
-//     for(let i=0; i < adlar.length;i++){
-//         if(adlar[i].includes('a')){
-//             console.log(adlar[i])
-//         }
-//     }
-// }
-// find()
-
-// function lastIndex(){
-//     for(let i=0; i<adlar.length;i++){
-//         console.log(adlar[i].toString)
-//     }
-// }
-// lastIndex()
-
-
 const students = [
     {
         ad: 'Samir',
