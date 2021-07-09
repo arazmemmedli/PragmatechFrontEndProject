@@ -324,11 +324,10 @@ body{
     margin-bottom: 90px;
 }
 .content__container{
-    display: flex;
-    height: 658px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
 }
 .content__item{
-    width: 50%;
     position: relative;
 }
 .content__item__bg{
@@ -340,7 +339,6 @@ body{
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 }
 .content__item__one{
-    width: calc(759.6px / 2);
     background-image: url(../images/h5_banner-2.jpg);
     background-position: top left;
     background-size: cover;
@@ -348,7 +346,6 @@ body{
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 }
 .content__item__too{
-    width: calc(759.6px / 2);
     background-image: url(../images/h5_banner-3.jpg);
     background-position: top right;
     background-size: cover;
@@ -356,7 +353,6 @@ body{
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 }
 .content__market__item{
-    width: calc(759.6px / 2);
     position: relative;
     overflow: hidden;
 }
@@ -1610,9 +1606,6 @@ body{
 .footer{
     background-color: #0a472e;
 }
-.footer__start{
-    max-width: 1519px;
-}
 .footer__start__container{
     max-width: 1320px;
     min-height: 552px;
@@ -1774,7 +1767,7 @@ body{
     border-radius: 20px;
     background-color: #fff;
     cursor: pointer;
-    padding: 0 20px !important;
+    padding-right: 20px;
     border: none;
     outline: none;
 }
