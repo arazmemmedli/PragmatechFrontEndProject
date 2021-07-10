@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.snow {
+    position: absolute;
+    color: white;
+    top: -20px;
+    animation: fall 1s linear forwards;
+    display: inline-block;
+}
+
+.audio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.audio p {
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
