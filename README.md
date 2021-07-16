@@ -10,7 +10,7 @@
  - [Javascript-də OOP konseptlərinin tətbiqi.](https://azikmemmedzade.medium.com/oop-n%C9%99dir-6f195a4a6478)
 
 # Works:
-## WORDPRESS PERSONAL PORTFOLIO
+## Wordpress Personal Portfolio
 > istifadə olunan texnologiyalar:
 
  - HTML
@@ -19,7 +19,7 @@
  - Python(Flask) 
 > işin təhvil verilmə müddəti:  2 aylıq foundation müddəti ərzində
 
-## FRESHIO
+## Freshio
 > istifadə olunan texnologiyalar:
 
  - HTML
@@ -35,7 +35,7 @@
  - SASS(SCSS)
 > işin təhvil verilmə müddəti: 3 gün
 
-## CREATİVE PERSONAL PORTFOLİO
+## Creative Personal Portfolio
 > istifadə olunan texnologiyalar:
 
  - HTML
