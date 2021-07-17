@@ -1,0 +1,23 @@
+body {
+    background-color: #222;
+}
+.box {
+    border-radius: 5px;
+}
+
+.box__title {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+}
+.box__text {
+    border: 1px solid #ddd;
+    height: 200px;
+}
+.col-6:nth-child(n+1) {
+    margin-bottom: 10px;
+}
+
+.active {
+    display: none;
+}
