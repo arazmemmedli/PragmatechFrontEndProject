@@ -1,4 +1,7 @@
 # Front End Project
+
+![Screenshot_1](https://user-images.githubusercontent.com/76637491/128386058-06bc64f5-7059-4b01-bb27-36e9cf59311a.png)
+
 # Məqalələr
 ## BEM - Block Modifier Element
  - [BEM - Block Element Modifier](https://azikmemmedzade.medium.com/bem-block-element-modifier-3eadfe5d1aa0)
