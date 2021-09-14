@@ -456,7 +456,7 @@ body .preloader__center .preloader__element:nth-child(3) {
 .container-fluid .left-side__bg__plan .left-side__bg__expand {
   display: block;
   bottom: 0;
-  left: 33.7%;
+  right: 60.5%;
   background: #111;
   text-align: center;
 }

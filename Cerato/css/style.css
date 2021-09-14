@@ -712,6 +712,9 @@ body{
 #daily .daily-boxed .boxed-header .boxed-nav .site-countdown-block .countdown-times{
     display: flex;
 }
+#daily .daily-boxed .boxed-header .boxed-nav .site-countdown-block .countdown-block {
+    margin-left: 10px;
+}
 #daily .daily-boxed .boxed-header .boxed-nav .site-countdown-block .countdown-times #day::after{
     content: " d :";
 }

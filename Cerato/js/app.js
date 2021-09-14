@@ -88,7 +88,7 @@ function autoPlay(){
 
 let timer=setInterval(autoPlay,6000)
 
-var countDate = new Date('Apr 28, 2021 00:00:00').getTime();
+var countDate = new Date('2021/09/25 23:00:00').getTime();
 
 var x = setInterval(function(){
     var now = new Date().getTime();
