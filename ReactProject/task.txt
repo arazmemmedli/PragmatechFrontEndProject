@@ -1,0 +1,27 @@
+navAr = [
+    {
+        navTitle: World,
+        navUrl: About,
+        navClass: navbar,
+    },
+    {
+        navTitle: World,
+        navUrl: About,
+        navClass: navbar,
+    },
+    {
+        navTitle: World,
+        navUrl: About,
+        navClass: navbar,
+    },
+    {
+        navTitle: World,
+        navUrl: About,
+        navClass: navbar,
+    },
+    {
+        navTitle: World,
+        navUrl: About,
+        navClass: navbar,
+    }
+]
