@@ -4,7 +4,8 @@ import './TicTacToe.css'
 
 function Sheet() {
     const [sheetSguare, setSheetSguare] = useState(Array(9).fill(null));
-    const [isNext, setIsNext] = useState(true)
+    const [isNext, setIsNext] = useState(true);
+    const [message, setMessage] = useState("");
 
     const Actions = (index) => {
         let sguares = [...sheetSguare];
@@ -12,10 +13,6 @@ function Sheet() {
             return;
         }
         sguares[index] = isNext ? "X" : "O";
-
-        if (sguares.length == 9 && !sguares.includes(null)) {
-            alert("Drow")
-        }
 
         setSheetSguare(sguares);
         setIsNext(!isNext);
@@ -28,10 +25,12 @@ function Sheet() {
             <Square a={isNext} style={color} data={sheetSguare[index]} onClick={() => Actions(index)} />
         )
     }
-    const winner = Winner(sheetSguare);
 
-    let message;
-    message = winner ? 'Winner: ' + winner : 'Next player: ' + (isNext ? 'X' : 'O');
+    useEffect(() => {
+        const winner = Winner(sheetSguare);
+
+        setMessage(winner ? 'Winner: ' + winner : 'Next player: ' + (isNext ? 'X' : 'O'))
+    }, [sheetSguare, message])
 
     const Reset = () => {
         setSheetSguare(Array(9).fill(null));
@@ -52,7 +51,7 @@ function Sheet() {
                 {renderSguares(7)}
                 {renderSguares(8)}
             </div>
-            <button className="reset" onClick = { Reset }>Reset</button>
+            <button className="reset" onClick={Reset}>Reset</button>
         </>
     )
 }
@@ -69,6 +68,8 @@ export function Winner(sguares) {
         const [x, y, z] = movement[i];
         if (sguares[x] && sguares[x] === sguares[y] && sguares[y] === sguares[z]) {
             return sguares[x];
+        } else if (!(sguares[x] && sguares[x] === sguares[y] && sguares[y] === sguares[z]) && sguares.length == 9 && !sguares.includes(null)) {
+            return "Drow";
         }
     }
 
