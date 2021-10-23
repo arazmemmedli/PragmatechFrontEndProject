@@ -1,0 +1,25 @@
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 68px;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container a {
+    text-decoration: none;
+    color: #b81d24;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.header__container .netflix__logo {
+    max-width: 92px;
+}
+
+.header__container a:hover {
+    color: #e81e25;
+}
