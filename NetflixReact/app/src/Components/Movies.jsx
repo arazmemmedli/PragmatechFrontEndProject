@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useContext } from 'react';
 import shortid from "shortid";
 import Trending from './Trending';
-import "./Movies.css"
+import "../Css/Movies.css"
 import { MoviesContext } from '../Context';
 
 function Movies() {

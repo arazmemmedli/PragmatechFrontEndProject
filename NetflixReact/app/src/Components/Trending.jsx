@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import shortid from "shortid";
 import Slide from './Slide';
-import "./Movies.css";
+import "../Css/Movies.css";
 
 const css = {
     width:"280px"
@@ -54,7 +54,7 @@ function Trending({categoryname, movies}) {
                     {
                         movies.map((item) => {
                             return (
-                                <Slide key={shortid.generate()} style={css} srcImg={item.srcImg} moviesTitle={item.moviesTitle} green={item.green} moviesRate={item.moviesRate} moviesDuration={item.moviesDuration} />
+                                <Slide key={shortid.generate()} style={css} {...item} />
                             )
                         })
                     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef } from 'react';
-import "./Registration.css"
+import "..//..//Css/Registration.css"
 
 
 function Step3({ onClick, setFirstName }) {

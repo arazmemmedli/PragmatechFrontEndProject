@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, useEffect, useState } from 'react';
 import { MoviesContext } from '../Context';
 import { useParams } from "react-router-dom";
-import "./SinglePost.css"
+import "../Css/SinglePost.css"
 
 function SinglePost() {
     const data = useContext(MoviesContext)
@@ -20,7 +20,7 @@ function SinglePost() {
         }
         
         setMovie(res()) 
-    })
+    },[])
 
     return (
         <div className="movie-detail">

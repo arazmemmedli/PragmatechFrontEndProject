@@ -1,6 +1,6 @@
 import React from 'react'
 import logoTwo from "../../images/download2.png"
-import "./Registration.css"
+import "..//..//Css/Registration.css"
 
 function Step1({onClick}) {
     return (

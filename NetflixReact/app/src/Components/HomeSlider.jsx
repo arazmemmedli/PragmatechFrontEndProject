@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import shortid from "shortid";
-import "./Slider.css"
+import "../Css/Slider.css"
+
+const style = {
+    width:"1200px"
+}
 
 class HomeSlider extends Component {
     constructor(props) {
@@ -40,7 +44,7 @@ class HomeSlider extends Component {
 
         this.setState(prevState => ({
             currentIndex: prevState.currentIndex - 1,
-            translateValue: prevState.translateValue + this.slideWidth()
+            translateValue: prevState.translateValue + parseFloat(style.width)
         }))
     }
 
@@ -54,12 +58,8 @@ class HomeSlider extends Component {
 
         this.setState(prevState => ({
             currentIndex: prevState.currentIndex + 1,
-            translateValue: prevState.translateValue + -(this.slideWidth())
+            translateValue: prevState.translateValue + -(parseFloat(style.width))
         }));
-    }
-
-    slideWidth = () => {
-        return document.querySelector('.carousel__slide').clientWidth;
     }
 
     render() {
@@ -75,7 +75,7 @@ class HomeSlider extends Component {
                             {
                                 items.map((item) => {
                                     return (
-                                        <Slide key={shortid.generate()} titleOne={item.titleOne} titleTwo={item.titleTwo} overviewOne={item.overviewOne} overviewTwo={item.overviewTwo} overviewThree={item.overviewThree} imgSrc={item.imgSrc} />
+                                        <Slide key={shortid.generate()} {...item} />
                                     )
                                 })
                             }
@@ -100,7 +100,7 @@ class HomeSlider extends Component {
 
 const Slide = ({ titleOne, titleTwo, overviewOne, overviewTwo, overviewThree, imgSrc }) => {
     return (
-        <div className="carousel__slide">
+        <div className="carousel__slide" style={style}>
             <div className="carousel__slide__content">
                 <div className="carousel__slide__content__item">
                     <div className="carousel__slide__info">

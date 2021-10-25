@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "./Movies.css";
+import "../Css/Movies.css";
 
 const Slide = ({ style,srcImg, moviesTitle, green, moviesRate, moviesDuration }) => {
     const newTitle = moviesTitle.replace(/[^A-Z0-9]/ig, "");

@@ -1,10 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
-import "./Registration.css"
+import "..//..//Css/Registration.css"
 
 const packages = [
     {
@@ -19,34 +19,27 @@ const packages = [
 ]
 
 function Register() {
+    
     const [firstName, setFirstName] = useState(null)
     const [step, setStep] = useState(1);
     const [step2Complation, setStep2Complation] = useState(-1);
 
-
-    const nextStepOne = () => {
-        if (step === 1) {
-            setStep(step + 1);
-        }
-    }
-
-    const nextStepTwo = () => {
+    const nextStepTwo = useCallback(() => {
         if (step2Complation == -1) {
             alert("Choose One of the packages")
         }
         else if (step === 2) {
             setStep(step + 1);
         }
-    }
+    })
 
-    const nextStep = () => {
+    const nextStep = useCallback(() => {
         setStep(step + 1)
-    }
-
+    })
 
     const StepOf = () => {
         if (step === 1) {
-            return <Step1 onClick={() => { nextStepOne() }} />
+            return <Step1 onClick={() => { nextStep() }} />
         } else if (step === 2) {
             return <Step2 onClick={() => { nextStepTwo() }} setstate={setStep2Complation} packages={packages} />
         } else if (step === 3) {

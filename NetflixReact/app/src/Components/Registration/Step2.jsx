@@ -1,6 +1,6 @@
 import React from 'react'
 import shortid from "shortid";
-import "./Registration.css"
+import "..//..//Css/Registration.css"
 
 const textStyle = {
     color:"#e50914"
