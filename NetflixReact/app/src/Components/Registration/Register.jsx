@@ -8,18 +8,21 @@ import "..//..//Css/Registration.css"
 
 const packages = [
     {
+        id: 0,
         name: "Basic"
     },
     {
+        id: 1,
         name: "Standart"
     },
     {
+        id: 2,
         name: "Premium"
     }
 ]
 
 function Register() {
-    
+
     const [firstName, setFirstName] = useState(null)
     const [step, setStep] = useState(1);
     const [step2Complation, setStep2Complation] = useState(-1);
@@ -41,7 +44,7 @@ function Register() {
         if (step === 1) {
             return <Step1 onClick={() => { nextStep() }} />
         } else if (step === 2) {
-            return <Step2 onClick={() => { nextStepTwo() }} setstate={setStep2Complation} packages={packages} />
+            return <Step2 onClick={() => { nextStepTwo() }} setstate={setStep2Complation} step={step2Complation} packages={packages} />
         } else if (step === 3) {
             return <Step3 onClick={() => { nextStep() }} setFirstName={setFirstName} />
         } else if (step === 4) {

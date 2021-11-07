@@ -2,7 +2,9 @@ import React from 'react'
 import logo from "../images/download.png"
 import "../Css/Footer.css"
 
+
 function Footer() {
+
     return (
         <footer className="footer">
             <div className="footer__wrapper">
