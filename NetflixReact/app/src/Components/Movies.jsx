@@ -55,7 +55,7 @@ function Movies() {
                                 obj.ref = ref
                             }
                             return (
-                                <div key={shortid.generate()} {...obj}><SearchMovie onClick={() => { modalClick(index) }} {...data} /></div>
+                                <div {...obj}><SearchMovie onClick={() => { modalClick(index) }} {...data} /></div>
                             )
                         })
                     }

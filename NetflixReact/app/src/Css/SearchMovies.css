@@ -30,6 +30,15 @@
 
 .search__movie__content__img img {
     max-width: 100%;
+    object-fit: cover;
+}
+
+.search__movie__content:hover .search__movie__content__details {
+    opacity: 1;
+}
+
+.search__movie__content:hover .search__movie__content__overlay {
+    opacity: 1;
 }
 
 .search__movie__content__details {
