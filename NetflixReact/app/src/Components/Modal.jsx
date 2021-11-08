@@ -35,7 +35,11 @@ function Modal({ closeModal, id, media_type }) {
             ]
         }
 
-        await sdk.current.AddItems(list_id, data)
+        try {
+            await sdk.current.AddItems(list_id, data)
+        } catch (error) {
+            console.log(error)
+        }
 
     }
 

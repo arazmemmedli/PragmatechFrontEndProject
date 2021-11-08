@@ -49,14 +49,14 @@ function App() {
                   <Route path="/registration" exact>
                     <Register />
                   </Route>
+                  <Route path="/movie-update/:name" exact>
+                    <Update />
+                  </Route>
                   <Route path="/:name/:id" exact>
                     <SinglePost />
                   </Route>
                   <Route path="/createlist" exact>
                     <CreateList />
-                  </Route>
-                  <Route path="/movie-update/:name" exact>
-                    <Update />
                   </Route>
                 </Switch>
                 <Footer />
