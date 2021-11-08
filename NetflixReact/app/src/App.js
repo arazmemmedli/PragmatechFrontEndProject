@@ -49,7 +49,7 @@ function App() {
                   <Route path="/registration" exact>
                     <Register />
                   </Route>
-                  <Route path="/movies-shows/:id" exact>
+                  <Route path="/:name/:id" exact>
                     <SinglePost />
                   </Route>
                   <Route path="/createlist" exact>

@@ -11,7 +11,7 @@ function SearchMovie({ onClick, list_id, style, id, backdrop_path, original_name
                 <img src={IMG_API + backdrop_path} alt={original_title} />
             </div>
             <Link to={{
-                pathname: `/movies-shows/${id}`, state: {
+                pathname: `/${media_type}/${id}`, state: {
                     mediaType: media_type
                 }
             }} className="single__post__movie">
