@@ -1,19 +1,15 @@
 import React from 'react'
-import shortid  from "shortid";
+import shortid from "shortid";
 import '../App.css';
 
-function Pagination({pagCount,paginate}) {
-    const pageNumbers = [];
-    for(let i=1; i<=pagCount;i++) {
-        pageNumbers.push(i);
-    }
+function Pagination({ pagCount, paginate }) {
     return (
         <nav aria-label="Page navigation example">
             <ul className="pagination d-grid">
                 {
-                    pageNumbers.map((number) => {
+                    Array(Math.ceil(pagCount)).fill(" ").map((number, index) => {
                         return (
-                            <li key={shortid.generate()} className="page-item"><a className="page-link" onClick={() => paginate(number)} href="!#">{number}</a></li>
+                            <li key={shortid.generate()} className="page-item"><a className="page-link" onClick={() => paginate(index + 1)} href="!#">{index + 1}</a></li>
                         )
                     })
                 }

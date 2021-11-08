@@ -4,9 +4,8 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import Pagination from './Pagination';
 
 function Main() {
-
     const [value, setValue] = useState();
-    const [termsData, setTermsData] = useState(null)
+    const [termsData, setTermsData] = useState(null);
     const [pagCount, setPagCount] = useState(null);
     const [page, setPage] = useState(1);
     const searchRef = useRef(null);
@@ -24,7 +23,7 @@ function Main() {
                 return res.json();
             }).then((data) => {
                 setTermsData(data);
-                setPagCount(data.totalItems / (data.endIndex - data.startIndex));
+                setPagCount(data.totalItems / (data.endIndex - data.startIndex + 1));
             }).catch(() => {
                 console.log("Data Yoxdur!")
             })
