@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, useState, useEffect, useRef } from 'react';
 import "..//Css/CreateList.css"
 import { MoviesContext } from '../Context';
-import { useParams,useLocation } from "react-router-dom";
+import { useParams,useLocation,useHistory } from "react-router-dom";
 import SDK from '../SDK';
 
 function Update() {
@@ -10,13 +10,13 @@ function Update() {
     const [listdata, setListData] = useState(null);
     const { name } = useParams();
     const location = useLocation();
+    const router = useHistory();
     const listId = location.state?.listId
     const listNameRef = useRef(null);
     const listDescriptionRef = useRef(null)
     const sdk = useRef(new SDK())
     
-    const UpdateList = async (e) => {
-        e.preventDefault();
+    const UpdateList = async () => {
         const data = {
             name:listNameRef.current.value,
             description:listDescriptionRef.current.value
@@ -35,7 +35,12 @@ function Update() {
     return (
         <div className="create__list__wrapper">
             <div className="create__list__form">
-                <form action="" onSubmit={UpdateList}>
+                <form action="" onSubmit={() => {
+                    UpdateList()
+                    router.push({
+                        pathname:"/"
+                    })
+                }}>
                     <div className="create__list__form__group">
                         <label className="create__list__title" htmlFor="Name">Name</label>
                         <input ref={listNameRef} type="text" onChange={(e) => {
@@ -68,7 +73,7 @@ function Update() {
                             <option value="title.desc">Başlık (Z-A)</option>
                         </select>
                     </div>
-                    <button type="submit" className="create__list__btn">Create List</button>
+                    <button type="submit" className="create__list__btn">Update List</button>
                 </form>
             </div>
         </div>

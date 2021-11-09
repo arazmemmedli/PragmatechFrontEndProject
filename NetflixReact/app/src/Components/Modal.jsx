@@ -41,6 +41,10 @@ function Modal({ closeModal, id, media_type }) {
             console.log(error)
         }
 
+        if(data) {
+            alert("Movie to list added")
+        }
+
     }
 
     return (

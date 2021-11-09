@@ -7,7 +7,7 @@ import "..//Css/CreateList.css";
 function CreateList() {
     const nameRef = useRef(null);
     const descRef = useRef(null);
-    const sdk=useRef(new SDK());
+    const sdk = useRef(new SDK());
 
     const createList = async (e) => {
         e.preventDefault();
@@ -18,7 +18,15 @@ function CreateList() {
             iso_639_1: "en"
         }
 
-        await sdk.current.CreateList(data);
+        try {
+            await sdk.current.CreateList(data);
+        } catch (error) {
+            console.log(error)
+        }
+
+        if(data) {
+            alert("List added")
+        }
 
     }
 
