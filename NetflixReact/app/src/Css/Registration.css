@@ -116,7 +116,6 @@
 }
 
 .package__first__item span {
-    color: #E5E5E5;
     padding: 0 15px;
 }
 
@@ -131,7 +130,6 @@
     text-align: center;
     margin: 0 15px;
     flex-shrink: 0;
-    color: #a6a6a6;
 }
 
 .package__items__standart {
@@ -139,7 +137,6 @@
     text-align: center;
     margin: 0 15px;
     flex-shrink: 0;
-    color: #a6a6a6;
 }
 
 .package__items__premium {
@@ -147,7 +144,6 @@
     text-align: center;
     margin: 0 15px;
     flex-shrink: 0;
-    color: #a6a6a6;
 }
 
 .register__slide__continue {

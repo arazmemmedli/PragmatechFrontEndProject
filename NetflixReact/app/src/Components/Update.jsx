@@ -2,11 +2,13 @@ import React from 'react'
 import { useContext, useState, useEffect, useRef } from 'react';
 import "..//Css/CreateList.css"
 import { MoviesContext } from '../Context';
+import { DarkMode } from '../App'
 import { useParams,useLocation,useHistory } from "react-router-dom";
 import SDK from '../SDK';
 
 function Update() {
     const { list } = useContext(MoviesContext);
+    const darkMode = useContext(DarkMode)
     const [listdata, setListData] = useState(null);
     const { name } = useParams();
     const location = useLocation();
@@ -42,26 +44,26 @@ function Update() {
                     })
                 }}>
                     <div className="create__list__form__group">
-                        <label className="create__list__title" htmlFor="Name">Name</label>
+                        <label className="create__list__title" htmlFor="Name" style={darkMode.mode === false ? {color:"#e5e5e5"} : {color:"#141414"}}>Name</label>
                         <input ref={listNameRef} type="text" onChange={(e) => {
                             setListData(e.target.value)
                         }} value={listdata?.name} name="name" id="name" className="create__list__form__control" style={{ height: "6px" }} />
                     </div>
                     <div className="create__list__form__group">
-                        <label className="create__list__title" htmlFor="Description">Description</label>
+                        <label className="create__list__title" htmlFor="Description" style={darkMode.mode === false ? {color:"#e5e5e5"} : {color:"#141414"}}>Description</label>
                         <textarea ref={listDescriptionRef} onChange={(e) => {
                             setListData(e.target.value)
                         }} type="text" value={listdata?.description} name="description" id="description" className="create__list__form__control" />
                     </div>
                     <div className="create__list__form__group">
-                        <label className="create__list__title" htmlFor="General List">General List?</label>
+                        <label className="create__list__title" htmlFor="General List" style={darkMode.mode === false ? {color:"#e5e5e5"} : {color:"#141414"}}>General List?</label>
                         <select className="general__list" name="general__list" id="general__list">
                             <option value="1" selected="selected">Yes</option>
                             <option value="0">No</option>
                         </select>
                     </div>
                     <div className="create__list__form__group">
-                        <label className="create__list__title" htmlFor="Sort By">Sort By</label>
+                        <label className="create__list__title" htmlFor="Sort By" style={darkMode.mode === false ? {color:"#e5e5e5"} : {color:"#141414"}}>Sort By</label>
                         <select className="sort__by" name="sort__by" id="sort__by">
                             <option value="original_order.asc" selected="selected">Orijinal Artan</option>
                             <option value="original_order.desc">Orijinal Azalan</option>

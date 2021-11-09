@@ -1,10 +1,11 @@
 import React from 'react'
-import { useRef } from 'react';
+import { useRef,useContext } from 'react';
+import { DarkMode } from '../../App';
 import "..//..//Css/Registration.css"
 
 
 function Step3({ onClick, setFirstName }) {
-
+    const darkMode = useContext(DarkMode)
     const firstName = useRef(null);
     const lastName = useRef(null);
     const email = useRef(null);
@@ -42,16 +43,16 @@ function Step3({ onClick, setFirstName }) {
 
     return (
         <div className="register__slide__three">
-            <div className="register__slide__steps">
+            <div className="register__slide__steps" style={darkMode.mode === false ? { color: "#e5e5e5" } : { color: "#141414" }}>
                 <span>STEP </span>
                 <strong>3 </strong>
                 <span>OF </span>
                 <strong>3</strong>
             </div>
-            <p className="register__slide__title">
+            <p className="register__slide__title" style={darkMode.mode === false ? { color: "#e5e5e5" } : { color: "#141414" }}>
                 Choose a plan that's right for you..
             </p>
-            <p className="register__slide__desc register__slide__three__desc">
+            <p className="register__slide__desc register__slide__three__desc" style={darkMode.mode === false ? { color: "#e5e5e5" } : { color: "#141414" }}>
                 Downgrade or upgrade at any time
             </p>
 
