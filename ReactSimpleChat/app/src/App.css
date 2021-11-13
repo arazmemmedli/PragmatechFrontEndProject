@@ -1,0 +1,18 @@
+
+.message__count {
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+}
+
+.chat__form {
+    padding: 2.5rem;
+    background-color: green;
+    border-radius: 0.375rem;
+
+}
+
+.chat__input {
+    outline: none;
+}
