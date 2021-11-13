@@ -1,0 +1,19 @@
+.header {
+    background-color: aqua;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__items__list {
+    padding-right: 20px;
+}
